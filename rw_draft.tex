@@ -5,8 +5,9 @@
 \begin{document}
 \section{Related Works}
 \subsection{Message Integrity and Tag Design}
-\paragraph{Tag }
-\subsubsection{Message Authentication}
+\paragraph{Message Integrity}
+In message transmission, the integrity of message means 
+\subsubsection{Message Authentication System}
 A common way to protect the integrity of message blocks is utilizing message authentication system. Assume the sender A sends message M to receiver B,the message authentication system is eligible to examine the modification on M. The concept of message authentication system is expressed in Figure 1. The sender uses the message as input to the tag generation system(TG$_K$(M)) to generate a short information block called tag. The message is concatenated with tag and transmitted to the receiver. Before the receiver accept the message M, M and its tag T are sent to the verification system(VF$_K$(M,T)). If the output of verification system is 1, that means the M and T are not matched, otherwise the message M is accepted by the receiver. 
 \begin{figure}[htbp]
 \centering
