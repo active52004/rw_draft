@@ -4,12 +4,25 @@
 \usepackage{amsmath}
 \begin{document}
 \section{Related Works}
-\paragraph{Message Authentication}
-The purpose of message authentication is to monitor the integrity of message blocks in the communication. In the senerio of processor-memory communication, message authentication can be defined as the process to verify that whether "the data read from memory by the processor (or by a specific application) at a given address is the data it last wrote at this address"(\cite{hm_survey}).
+\subsection{Message Authentication}
+The purpose of message authentication is to monitor the integrity of message blocks in the communication. In the senerio of processor-memory communication, message authentication can be defined as the process to verify that whether "the data read from memory by the processor (or by a specific application) at a given address is the data it last wrote at this address"(\cite{hm_survey}). The on-chip data, including the data from cache and 
 
+Figure 1 expresses the concept of message authentication for processor-memory communication. 
+When processor writes a data block, marked as D, to and address, marked as addr, on the memory, processor sends D to message authentication system and output a message block, marked as message(D, addr). The message block message(D,addr) can be the data block D only, D concatenated with a short block(commonly called tag) or other format of D.
+When the processor wants to read the data D from address addr, the message(D,addr) is read to SoC and sent to message authentication system first. After verified by MA, if the data D is not tampered, MA sends a signal indicating pass to processor and send the D to the processor, where D is extracted from message(D,addr) block read from memory.
+If the MA finds that the D is tampered, MA sends a failure signal to processor, and invoke the exception handling procedure.
 
+\subsection{Evaluating the Security of Message Authentication System}
+The purpose of adopting message authentication system in the system-on-chip is protecting the integrity of the data assessed by processor. 
+For new message authentication system, we expect that it is security first, then behaves good in performance and cost. So it is necessary to form security definition of message authentication system and do systematical evaluation of security on a new designed message authentication system.
 
-\subsection{The Security of Message Authentication System}
+\subsubsection{Threat Model}
+
+\subsubsection{Cryptographic Primitives Adopted in Message Authentication System Design}
+
+As discussed above, the cryptographic primitives adopted in current posted message authentication system are cryptographic hash functions, message authentication code(MAC) functions and added redundancy explicit authentication(AREA). The security of a message authentication system 
+
+\subsection{The Security of a MAC Scheme}
 \paragraph{Message Integrity}
 In message transmission, the integrity of message means 
 \subsubsection{Message Authentication System}

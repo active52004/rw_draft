@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.3.3)  6 MAR 2014 20:27
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.3.3)  10 MAR 2014 00:24
 entering extended mode
 **rw_draft.tex
 (D:\GitHub\rw_draft\rw_draft.tex
@@ -184,62 +184,67 @@ LaTeX Font Info:    ... okay on input line 5.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
- <./diagrams/ma.pdf, id=1, 845.1575pt x 597.23125pt>
+
+
+LaTeX Warning: Citation `hm_survey' on page 1 undefined on input line 8.
+
+<./diagrams/ma.pdf, id=1, 845.1575pt x 597.23125pt>
 File: ./diagrams/ma.pdf Graphic file (type pdf)
  <use ./diagrams/ma.pdf>
-Package pdftex.def Info: ./diagrams/ma.pdf used on input line 13.
+Package pdftex.def Info: ./diagrams/ma.pdf used on input line 31.
 (pdftex.def)             Requested size: 338.057pt x 238.88826pt.
-
-
-LaTeX Warning: Citation `gcm' on page 1 undefined on input line 19.
-
-
-LaTeX Warning: Citation `cetd' on page 1 undefined on input line 19.
 
 [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <D:/GitHub/rw_draft/diagra
-ms/ma.pdf>] <./diagrams/MAC.pdf, id=24, 845.1575pt x 597.23125pt>
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+
+LaTeX Warning: Citation `gcm' on page 2 undefined on input line 37.
+
+
+LaTeX Warning: Citation `cetd' on page 2 undefined on input line 37.
+
+[2 <D:/GitHub/rw_draft/diagrams/ma.pdf>]
+<./diagrams/MAC.pdf, id=27, 845.1575pt x 597.23125pt>
 File: ./diagrams/MAC.pdf Graphic file (type pdf)
-
-<use ./diagrams/MAC.pdf>
-Package pdftex.def Info: ./diagrams/MAC.pdf used on input line 24.
+ <use ./diagrams/MAC.pdf>
+Package pdftex.def Info: ./diagrams/MAC.pdf used on input line 42.
 (pdftex.def)             Requested size: 338.057pt x 238.88826pt.
- [2 <D:/GitHub/rw_draft/diagrams/MAC.pdf>]
-
-LaTeX Warning: Citation `Rogaway2011' on page 3 undefined on input line 33.
 
 
-LaTeX Warning: Citation `cbc1994' on page 3 undefined on input line 35.
+LaTeX Warning: Citation `Rogaway2011' on page 3 undefined on input line 51.
+
+[3 <D:/GitHub/rw_draft/diagrams/MAC.pdf>]
+
+LaTeX Warning: Citation `cbc1994' on page 4 undefined on input line 53.
 
 
-LaTeX Warning: Citation `signature' on page 3 undefined on input line 35.
+LaTeX Warning: Citation `signature' on page 4 undefined on input line 53.
 
 
-LaTeX Warning: Citation `prf' on page 3 undefined on input line 40.
+LaTeX Warning: Citation `prf' on page 4 undefined on input line 58.
 
 
-LaTeX Warning: Citation `cbc1994' on page 3 undefined on input line 40.
+LaTeX Warning: Citation `cbc1994' on page 4 undefined on input line 58.
 
 
-LaTeX Warning: Citation `prf' on page 3 undefined on input line 42.
+LaTeX Warning: Citation `prf' on page 4 undefined on input line 60.
 
 
-LaTeX Warning: Citation `cbc1994' on page 3 undefined on input line 42.
+LaTeX Warning: Citation `cbc1994' on page 4 undefined on input line 60.
 
 
-LaTeX Warning: Citation `prf' on page 3 undefined on input line 42.
+LaTeX Warning: Citation `prf' on page 4 undefined on input line 60.
 
-[3] [4] (D:\GitHub\rw_draft\rw_draft.aux)
+[4] [5] (D:\GitHub\rw_draft\rw_draft.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2917 strings out of 493921
- 42167 string characters out of 3152095
- 101842 words of memory out of 3000000
- 6231 multiletter control sequences out of 15000+200000
+ 2918 strings out of 493921
+ 42178 string characters out of 3152095
+ 102842 words of memory out of 3000000
+ 6232 multiletter control sequences out of 15000+200000
  5612 words of font info for 21 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  44i,8n,42p,772b,273s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -249,9 +254,9 @@ sfonts/cm/cmmi10.pfb><G:/Tools/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
 <G:/Tools/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><G:/Tools/MikTex/font
 s/type1/public/amsfonts/cm/cmr7.pfb><G:/Tools/MikTex/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb>
-Output written on rw_draft.pdf (4 pages, 163055 bytes).
+Output written on rw_draft.pdf (5 pages, 167305 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
+ 76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
