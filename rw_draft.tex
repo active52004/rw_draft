@@ -5,19 +5,23 @@
 \begin{document}
 \section{Related Works}
 \subsection{Message Authentication}
-The purpose of message authentication is to monitor the integrity of message blocks in the communication. In the senerio of processor-memory communication, message authentication can be defined as the process to verify that whether "the data read from memory by the processor (or by a specific application) at a given address is the data it last wrote at this address"(\cite{hm_survey}). The on-chip data, including the data from cache and 
+The purpose of message authentication, marked as MA, is to monitor the integrity of message blocks in the communication. In the scenario of processor-memory communication, MA can be defined as the process to verify that whether "the data read from memory by the processor (or by a specific application) at a given address is the data it last wrote at this address"(\cite{hm_survey}). The on-chip data is assumed to be inaccessible and secure, which is called trusted area; while the data in the transmission and stored in off-chip memory is considered to be accessible to attackers and vulnerable. Transmission path(such as bus) and off-chip memory are called malicious area. 
 
-Figure 1 expresses the concept of message authentication for processor-memory communication. 
-When processor writes a data block, marked as D, to and address, marked as addr, on the memory, processor sends D to message authentication system and output a message block, marked as message(D, addr). The message block message(D,addr) can be the data block D only, D concatenated with a short block(commonly called tag) or other format of D.
-When the processor wants to read the data D from address addr, the message(D,addr) is read to SoC and sent to message authentication system first. After verified by MA, if the data D is not tampered, MA sends a signal indicating pass to processor and send the D to the processor, where D is extracted from message(D,addr) block read from memory.
+Figure 1 expresses the concept of MA for processor-memory communication. 
+When processor writes a data block, marked as D, to and address, marked as addr, on the memory, processor sends D to MA system and output a message block, marked as message(D, add$_B$), where add$_$b represents and additional data block. The message block message(D,add$_B$) can be the data block D only, D concatenated with a short block(commonly called tag) or other format of D. The content of message(D,add$_B$) is determined by the design of MA system.
+When the processor wants to read the data D from address addr, the message(D,add$_B$) is read to SoC and sent to MA system first. After verified by MA, if the data D is not tampered, MA sends a signal indicating pass to processor and send the D to the processor, where D is extracted from message(D,add$_B$) block read from memory.
+
 If the MA finds that the D is tampered, MA sends a failure signal to processor, and invoke the exception handling procedure.
-
+MA system utilizes additional data block in generating message(D, add$_B$). 
 \subsection{Evaluating the Security of Message Authentication System}
-The purpose of adopting message authentication system in the system-on-chip is protecting the integrity of the data assessed by processor. 
-For new message authentication system, we expect that it is security first, then behaves good in performance and cost. So it is necessary to form security definition of message authentication system and do systematical evaluation of security on a new designed message authentication system.
-
+The purpose of adopting message authentication(MA) system in the system-on-chip is protecting the integrity of the data assessed by processor. 
+For new MA system, we expect that it is security first, then behaves good in performance and cost. So it is necessary to form security definition of MA system and do systematical evaluation of security on a new designed MA system.
 \subsubsection{Threat Model}
-
+To our knowledge, the attacks aiming to break the integrity of data in malicious area come from two aspects:
+\begin{itemize}
+	\item Introducing new data: this aspect of attack includes inserting new data block or change content of data block in malicious area
+	\item Replacing data block with valid data: this aspect of attack includes replace a data block 
+\end{itemize}
 \subsubsection{Cryptographic Primitives Adopted in Message Authentication System Design}
 
 As discussed above, the cryptographic primitives adopted in current posted message authentication system are cryptographic hash functions, message authentication code(MAC) functions and added redundancy explicit authentication(AREA). The security of a message authentication system 
