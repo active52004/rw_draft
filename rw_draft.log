@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  10 MAR 2014 11:34
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  10 MAR 2014 17:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -238,79 +238,92 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
+Overfull \hbox (9.35506pt too wide) in paragraph at lines 8--8
+[]\OT1/cmr/bx/n/10 Motivation: Data In-tegrity Threat Model for Processor-Memor
+y
+ []
 
-LaTeX Warning: Citation `hm_survey' on page 1 undefined on input line 8.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 14.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
+
+Overfull \hbox (3.28285pt too wide) in paragraph at lines 31--31
+[]\OT1/cmr/bx/n/10 Evaluating the Se-cu-rity of Cryp-to-graphic Au-then-ti-ca-t
+ion Prim-
+ []
+
+
+LaTeX Warning: Citation `hm_survey' on page 1 undefined on input line 46.
 
 <./diagrams/MA_concept.pdf, id=1, 663.07722pt x 281.85298pt>
 File: ./diagrams/MA_concept.pdf Graphic file (type pdf)
 
 <use ./diagrams/MA_concept.pdf>
-Package pdftex.def Info: ./diagrams/MA_concept.pdf used on input line 11.
+Package pdftex.def Info: ./diagrams/MA_concept.pdf used on input line 49.
 (pdftex.def)             Requested size: 265.22618pt x 112.7392pt.
 
-Overfull \hbox (0.49951pt too wide) in paragraph at lines 8--18
+Overfull \hbox (0.49951pt too wide) in paragraph at lines 46--53
 \OT1/cmr/m/n/10 memory com-mu-ni-ca-tion, MA can be de-fined as the pro-cess to
  ver-ify that whether
  []
 
 [1
 
-{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./diagr
-ams/MA_concept.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 27.
+{/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2 <./diagrams/MA_concept.pdf>]
+Overfull \hbox (7.45003pt too wide) in paragraph at lines 65--66
+ \OT1/cmr/bx/n/10 Block- level Added Re-dun-dancy Ex-plicit Au-then-ti-ca-tion[
+] \OT1/cmr/m/n/10 Pa-pers propos-
+ []
 
-(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
-
-<./diagrams/ma.pdf, id=37, 845.1575pt x 597.23125pt>
+[3] <./diagrams/ma.pdf, id=44, 845.1575pt x 597.23125pt>
 File: ./diagrams/ma.pdf Graphic file (type pdf)
- <use ./diagrams/ma.pdf>
-Package pdftex.def Info: ./diagrams/ma.pdf used on input line 41.
+
+<use ./diagrams/ma.pdf>
+Package pdftex.def Info: ./diagrams/ma.pdf used on input line 92.
 (pdftex.def)             Requested size: 338.057pt x 238.88826pt.
 
 
-LaTeX Warning: Citation `gcm' on page 2 undefined on input line 47.
+LaTeX Warning: Citation `gcm' on page 4 undefined on input line 98.
 
 
-LaTeX Warning: Citation `cetd' on page 2 undefined on input line 47.
+LaTeX Warning: Citation `cetd' on page 4 undefined on input line 98.
 
-[2] <./diagrams/MAC.pdf, id=42, 845.1575pt x 597.23125pt>
+[4 <./diagrams/ma.pdf>] <./diagrams/MAC.pdf, id=62, 845.1575pt x 597.23125pt>
 File: ./diagrams/MAC.pdf Graphic file (type pdf)
 
 <use ./diagrams/MAC.pdf>
-Package pdftex.def Info: ./diagrams/MAC.pdf used on input line 52.
+Package pdftex.def Info: ./diagrams/MAC.pdf used on input line 103.
 (pdftex.def)             Requested size: 338.057pt x 238.88826pt.
+ [5 <./diagrams/MAC.pdf>]
+
+LaTeX Warning: Citation `Rogaway2011' on page 6 undefined on input line 112.
 
 
-LaTeX Warning: Citation `Rogaway2011' on page 3 undefined on input line 61.
-
-[3 <./diagrams/ma.pdf>]
-
-LaTeX Warning: Citation `cbc1994' on page 4 undefined on input line 63.
+LaTeX Warning: Citation `cbc1994' on page 6 undefined on input line 114.
 
 
-LaTeX Warning: Citation `signature' on page 4 undefined on input line 63.
-
-[4 <./diagrams/MAC.pdf>]
-
-LaTeX Warning: Citation `prf' on page 5 undefined on input line 68.
+LaTeX Warning: Citation `signature' on page 6 undefined on input line 114.
 
 
-LaTeX Warning: Citation `cbc1994' on page 5 undefined on input line 68.
+LaTeX Warning: Citation `prf' on page 6 undefined on input line 119.
 
 
-LaTeX Warning: Citation `prf' on page 5 undefined on input line 70.
+LaTeX Warning: Citation `cbc1994' on page 6 undefined on input line 119.
 
 
-LaTeX Warning: Citation `cbc1994' on page 5 undefined on input line 70.
+LaTeX Warning: Citation `prf' on page 6 undefined on input line 121.
 
 
-LaTeX Warning: Citation `prf' on page 5 undefined on input line 70.
+LaTeX Warning: Citation `cbc1994' on page 6 undefined on input line 121.
 
-[5] [6] (./rw_draft.aux)
+
+LaTeX Warning: Citation `prf' on page 6 undefined on input line 121.
+
+[6] [7] (./rw_draft.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -321,7 +334,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  3249 strings out of 493488
  49105 string characters out of 3141326
- 111114 words of memory out of 3000000
+ 112114 words of memory out of 3000000
  6541 multiletter control sequences out of 15000+200000
  5612 words of font info for 21 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -333,10 +346,10 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 /local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/lo
 cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on rw_draft.pdf (6 pages, 283972 bytes).
+Output written on rw_draft.pdf (7 pages, 290985 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 113 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

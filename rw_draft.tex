@@ -3,8 +3,61 @@
 \usepackage{subfig}
 \usepackage{amsmath}
 \begin{document}
-\section{Related Works}
-\subsection{Message Authentication}
+\section{Related Works} 
+\subsection{Preliminaries}
+\subsubsection{Motivation: Data Integrity Threat Model for Processor-Memory Architecture}
+\paragraph{What to decite in this subsection}
+What is data integriy for processor-memory system, how to attack the integrity
+
+In the scenario of processor-memory architecture, data integrity refers to maintaing the data on the trasmission outside the chip and stored on off-chip memory untampered. If the data stored on off-chip memory , or some external data injected to the system S, we can say that the data integrity of S is attacked. If the system S can not examine the tamperd data or injected data, the attack is assumed to be successful. According to our knowledge, there are two aspects of attacks on data integrity:
+\begin{itemize}
+	\item Introducing new content: The content of data in the system is modified, or data construct by the attacker is inserted to the system.
+	\item Replacing data with valiad copy: The data D in trasmission or on the memory is replace with the following two types of copy: A copy of D at an old time point or a copy of other data from different memory address.
+\end{itemize}
+
+\subsubsection{Cryptographic Authentication Primitives of Integrity Protection}
+\paragraph{What to decite in this subsection}
+The methods to detect tampered data before read operation
+
+The goal of integrity protection can be defined as the capability to examine whether the data to read by processor has been tampered. According to our knowledge, there are three common types of cryptographic primitives aiming to protect the data integrity of a system, which are cryptographic hash function, Message Authentication Code(MAC) scheme and block-level Added Redundancy Explicit Authentication (AREA).
+
+\paragraph{Cryptographic hash function}
+Q: if two D blocks have same value while the address and time point is distinct, what is their H value?
+
+Figure 3-a expresses functionality of hash function in integrity protection.  When processor writes a data block to a memory address, the data block D is sent to Hash function and a Hash value H1 is computed and stored on the chip. The hash value H is stored on chip following the order of data block on the memory. The message stored on the memory from chip is data block D alone.
+When the processor wants to read a data block D from memory, D is sent to hash function and an hash value H2 is computed. If H1 is identical to H2, then the data block D is assumed to be untampered and read by processor.
+
+If the integrity of a processor-memory system is protected by hash function, the possible attacks are:
+\begin{itemize}
+	\item Modify the content of a data block
+	\item Replace the content of a data block with a copy of data from other address
+	\item Insert new data
+\end{itemize}
+Based on the procedure of intergrity protection using hash funciton, we can see that the hash function can effectively protect the integrity of data if its output hash values are randomly distributed. When meeting a effective hash function, the attacker can only perform attacks with bruteforce.
+  
+\paragraph{MAC Scheme}
+Q:for each data block, should the nonce be distinctive?
+
+Figure 3-b expresses the functionality of MAC scheme in integrity protection.
+A MAC scheme accepts two input arguments: the data block D and an nonce N. 
+When processor writes a data block to a memory address, the data block D is sent to MAC scheme to
+\paragraph{Block-level AREA}
+
+\subsubsection{Evaluating the Security of Cryptographic Authentication Primitives}
+
+\subsection{Authentication Primitives and Their Security}
+\subsubsection{Hash Function}
+\subsubsection{MAC Function}
+\subsubsection{Block-level AREA}
+
+\subsection{Message Authentication(MA) Systems}
+\subsubsection{Hash Function Based MA Systems}
+\subsubsection{MAC Function Based MA Systems}
+\subsubsection{Block-level AREA Based MA Systems}
+
+
+
+\subsubsection{Concepts of Message Authentication(MA) System}
 The purpose of message authentication, marked as MA, is to monitor the integrity of message blocks in the communication. In the scenario of processor-memory communication, MA can be defined as the process to verify that whether "the data read from memory by the processor (or by a specific application) at a given address is the data it last wrote at this address"(\cite{hm_survey}). The on-chip data is assumed to be inaccessible and secure, which is called trusted area; while the data in the transmission and stored in off-chip memory is considered to be accessible to attackers and vulnerable. Transmission path(such as bus) and off-chip memory are called malicious area. 
 B\begin{figure}[htbp]
 \centering
@@ -12,26 +65,39 @@ B\begin{figure}[htbp]
 \caption{The Concept of Message Authentication System}
 \label{fig:1 }
 \end{figure}
-Figure 1 expresses the concept of MA for processor-memory communication. 
-When processor writes a data block, marked as D, to and address, marked as addr, on the memory, processor sends D to MA system and output a message block, marked as message(D, add$_B$), where add$_B$ represents and additional data block. The message block message(D,add$_B$) can be the data block D only, D concatenated with a short block(commonly called tag) or other format of D. The content of message(D,add$_B$) is determined by the design of MA system.
-When the processor wants to read the data D from address addr, the message(D,add$_B$) is read to SoC and sent to MA system first. After verified by MA, if the data D is not tampered, MA sends a signal indicating pass to processor and send the D to the processor, where D is extracted from message(D,add$_B$) block read from memory.
 
+Figure 1 expresses the concept of MA for processor-memory communication. 
+When processor writes a data block, marked as D, to and address, marked as addr, on the memory, processor sends D to MA system and output a message block, marked as message(D, add$_B$), where add$_B$ represents an additional data block. The message block message(D,add$_B$) can be the data block D only, D concatenated with a short block(commonly called tag) or other format of D. The content of message(D,add$_B$) is determined by the crypographic primitive adopted by the MA system.
+When the processor wants to read the data D from address addr, the message(D,add$_B$) is read to SoC and sent to MA system first. After verified by MA, if the data D is not tampered, MA sends a signal indicating pass to processor and send the D to the processor, where D is extracted from message(D,add$_B$) block read from memory.
 If the MA finds that the D is tampered, MA sends a failure signal to processor, and invoke the exception handling procedure.
-MA system utilizes additional data block in generating message(D, add$_B$). 
-\subsection{Evaluating the Security of Message Authentication System}
+
+\subsubsection{Common Cryptographic Primitives Adopted in MA System Design}
+\paragraph{Crypographic Hash Function}
+Papers proposing the theory model of hash functions
+\paragraph{Message Authentication Code(MAC) Function}
+Papers proposing MAC schemes
+\paragraph{Block- level Added Redundancy Explicit Authentication}
+Papers proposing AREA model
+
+\subsection{Evaluating the Security of MA System}
 The purpose of adopting message authentication(MA) system in the system-on-chip is protecting the integrity of the data assessed by processor. 
 For new MA system, we expect that it is security first, then behaves good in performance and cost. So it is necessary to form security definition of MA system and do systematical evaluation of security on a new designed MA system.
-\subsubsection{Threat Model}
+\paragraph{Threat Model}
 To our knowledge, the attacks aiming to break the integrity of data in malicious area come from two aspects:
 \begin{itemize}
 	\item Introducing new data: this aspect of attack includes inserting new data block or change content of data block in malicious area
 	\item Replacing data block with valid data: this aspect of attack includes replace a data block 
 \end{itemize}
-\subsubsection{Cryptographic Primitives Adopted in Message Authentication System Design}
+\subsubsection{MA System Design for Memory Protection}
+The security of a MA system can be defined as the capability to defend the attacks in threat model. 
+\paragraph{MA System for Uniprocessor-Memory Architecture}
+\paragraph{MA System for Multiprocessor-Memory Architecture}
+
+\subsection{Evaluating the Security of Cryptographic Primitives}
 
 As discussed above, the cryptographic primitives adopted in current posted message authentication system are cryptographic hash functions, message authentication code(MAC) functions and added redundancy explicit authentication(AREA). The security of a message authentication system 
 
-\subsection{The Security of a MAC Scheme}
+\subsubsection{The Security of a MAC Scheme}
 \paragraph{Message Integrity}
 In message transmission, the integrity of message means 
 \subsubsection{Message Authentication System}
@@ -39,7 +105,7 @@ A common way to protect the integrity of message blocks is utilizing message aut
 \begin{figure}[htbp]
 \centering
 \includegraphics[scale=0.4]{./diagrams/ma.pdf}
-\caption{The Concept of Message Authentication System}
+\caption{The Concept of MAC System}
 \label{fig:1 }
 \end{figure}
 \paragraph{Common Message Authentication Systems}
