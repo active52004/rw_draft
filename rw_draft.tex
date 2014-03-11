@@ -46,7 +46,7 @@ When the processor reads a data from memory, the data-pair is sent to the chip a
  
 Figure 3-b expresses the functionality of MAC scheme in integrity protection.
 
-If the integrity of a processor-memory system is protected by hash function, the possible attacks are:
+If the integrity of a processor-memory system is protected by MAC scheme, the possible attacks are:
 \begin{itemize}
 	\item Modify the content of a data-tag pair
 	\item Replace the content of a data-tag pair with a copy of data-tag pair from other address
@@ -55,7 +55,17 @@ If the integrity of a processor-memory system is protected by hash function, the
 \end{itemize}
 
 \paragraph{Block-level AREA}
-When the processor writes a data block D to memory, 
+When the processor writes a data block D to memory, AREA concatenated a nonce N to D to form a data-nonce pair. This data-nonce pair is encrypted to form a ciphertext block E$_k$(D $\mid$ N). The ciphertext block is stored on off-chip memory.
+
+When the processor reads a data block from memory, the ciphertext block is read to the chip and sent to AREA. After decryption, the nonce part of the pair, marked as N2, is compared to the nonce on-chip that is related to data D, marked as N1. If N1 and N2 are identical, D is assumed to be untampered.
+
+If the integrity of a processor-memory system is protected by AREA, the possible attacks are:
+\begin{itemize}
+	\item Modify the content of a E$_k$(D $\mid$ N)
+	\item Replace the content of a E$_k$(D $\mid$ N) with a copy from other address
+	\item Insert new E$_k$(D $\mid$ N)
+	\item Replace the content of a E$_k$(D $\mid$ N) with a copy of this ciphertext block in an old time point
+\end{itemize}
 
 \subsubsection{Evaluating the Security of Cryptographic Authentication Primitives}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.3.3)  10 MAR 2014 22:37
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.3.3)  11 MAR 2014 11:14
 entering extended mode
 **rw_draft.tex
 (D:\GitHub\rw_draft\rw_draft.tex
@@ -201,79 +201,80 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (3.28285pt too wide) in paragraph at lines 59--59
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+Overfull \hbox (3.28285pt too wide) in paragraph at lines 70--70
 []\OT1/cmr/bx/n/10 Evaluating the Se-cu-rity of Cryp-to-graphic Au-then-ti-ca-t
 ion Prim-
  []
 
 
-LaTeX Warning: Citation `hm_survey' on page 2 undefined on input line 74.
+LaTeX Warning: Citation `hm_survey' on page 3 undefined on input line 85.
 
-<./diagrams/MA_concept.pdf, id=9, 663.07722pt x 281.85298pt>
+<./diagrams/MA_concept.pdf, id=13, 663.07722pt x 281.85298pt>
 File: ./diagrams/MA_concept.pdf Graphic file (type pdf)
 
 <use ./diagrams/MA_concept.pdf>
-Package pdftex.def Info: ./diagrams/MA_concept.pdf used on input line 77.
+Package pdftex.def Info: ./diagrams/MA_concept.pdf used on input line 88.
 (pdftex.def)             Requested size: 265.22618pt x 112.7392pt.
 
-Overfull \hbox (0.49951pt too wide) in paragraph at lines 74--81
+Overfull \hbox (0.49951pt too wide) in paragraph at lines 85--92
 \OT1/cmr/m/n/10 memory com-mu-ni-ca-tion, MA can be de-fined as the pro-cess to
  ver-ify that whether
  []
 
-[2] [3 <D:/GitHub/rw_draft/diagrams/MA_concept.pdf>]
-Overfull \hbox (7.45003pt too wide) in paragraph at lines 93--94
+[3]
+Overfull \hbox (7.45003pt too wide) in paragraph at lines 104--105
  \OT1/cmr/bx/n/10 Block- level Added Re-dun-dancy Ex-plicit Au-then-ti-ca-tion[
 ] \OT1/cmr/m/n/10 Pa-pers propos-
  []
 
-[4] <./diagrams/ma.pdf, id=46, 845.1575pt x 597.23125pt>
+[4 <D:/GitHub/rw_draft/diagrams/MA_concept.pdf>]
+<./diagrams/ma.pdf, id=46, 845.1575pt x 597.23125pt>
 File: ./diagrams/ma.pdf Graphic file (type pdf)
-
-<use ./diagrams/ma.pdf>
-Package pdftex.def Info: ./diagrams/ma.pdf used on input line 120.
+ <use ./diagrams/ma.pdf>
+Package pdftex.def Info: ./diagrams/ma.pdf used on input line 131.
 (pdftex.def)             Requested size: 338.057pt x 238.88826pt.
 
 
-LaTeX Warning: Citation `gcm' on page 5 undefined on input line 126.
+LaTeX Warning: Citation `gcm' on page 5 undefined on input line 137.
 
 
-LaTeX Warning: Citation `cetd' on page 5 undefined on input line 126.
+LaTeX Warning: Citation `cetd' on page 5 undefined on input line 137.
 
-[5 <D:/GitHub/rw_draft/diagrams/ma.pdf>]
-<./diagrams/MAC.pdf, id=64, 845.1575pt x 597.23125pt>
+<./diagrams/MAC.pdf, id=47, 845.1575pt x 597.23125pt>
 File: ./diagrams/MAC.pdf Graphic file (type pdf)
  <use ./diagrams/MAC.pdf>
-Package pdftex.def Info: ./diagrams/MAC.pdf used on input line 131.
+Package pdftex.def Info: ./diagrams/MAC.pdf used on input line 142.
 (pdftex.def)             Requested size: 338.057pt x 238.88826pt.
 
-[6 <D:/GitHub/rw_draft/diagrams/MAC.pdf>]
+[5]
 
-LaTeX Warning: Citation `Rogaway2011' on page 7 undefined on input line 140.
+LaTeX Warning: Citation `Rogaway2011' on page 6 undefined on input line 151.
 
+[6 <D:/GitHub/rw_draft/diagrams/ma.pdf>]
 
-LaTeX Warning: Citation `cbc1994' on page 7 undefined on input line 142.
-
-
-LaTeX Warning: Citation `signature' on page 7 undefined on input line 142.
+LaTeX Warning: Citation `cbc1994' on page 7 undefined on input line 153.
 
 
-LaTeX Warning: Citation `prf' on page 7 undefined on input line 147.
+LaTeX Warning: Citation `signature' on page 7 undefined on input line 153.
 
 
-LaTeX Warning: Citation `cbc1994' on page 7 undefined on input line 147.
+LaTeX Warning: Citation `prf' on page 7 undefined on input line 158.
 
 
-LaTeX Warning: Citation `prf' on page 7 undefined on input line 149.
+LaTeX Warning: Citation `cbc1994' on page 7 undefined on input line 158.
+
+[7 <D:/GitHub/rw_draft/diagrams/MAC.pdf>]
+
+LaTeX Warning: Citation `prf' on page 8 undefined on input line 160.
 
 
-LaTeX Warning: Citation `cbc1994' on page 7 undefined on input line 149.
+LaTeX Warning: Citation `cbc1994' on page 8 undefined on input line 160.
 
 
-LaTeX Warning: Citation `prf' on page 7 undefined on input line 149.
+LaTeX Warning: Citation `prf' on page 8 undefined on input line 160.
 
-[7] [8] (D:\GitHub\rw_draft\rw_draft.aux)
+[8] (D:\GitHub\rw_draft\rw_draft.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -295,7 +296,7 @@ sfonts/cm/cmmi10.pfb><G:/Tools/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
 <G:/Tools/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><G:/Tools/MikTex/font
 s/type1/public/amsfonts/cm/cmr7.pfb><G:/Tools/MikTex/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb>
-Output written on rw_draft.pdf (8 pages, 302035 bytes).
+Output written on rw_draft.pdf (8 pages, 303601 bytes).
 PDF statistics:
  114 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
