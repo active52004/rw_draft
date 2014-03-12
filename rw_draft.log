@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.3.3)  11 MAR 2014 11:14
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.3.3)  11 MAR 2014 21:47
 entering extended mode
 **rw_draft.tex
 (D:\GitHub\rw_draft\rw_draft.tex
@@ -153,11 +153,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(D:\GitHub\rw_draft\rw_draft.aux
-
-LaTeX Warning: Label `fig:1 ' multiply defined.
-
-)
+(D:\GitHub\rw_draft\rw_draft.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
@@ -170,7 +166,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
- (G:\Tools\MikTex\tex\context\base\supp-pdf.mkii
+
+(G:\Tools\MikTex\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count108
 \scratchdimen=\dimen122
@@ -193,112 +190,96 @@ Overfull \hbox (9.35506pt too wide) in paragraph at lines 8--8
 y
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 14.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 11.
 (G:\Tools\MikTex\tex\latex\base\omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
  [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-Overfull \hbox (3.28285pt too wide) in paragraph at lines 70--70
-[]\OT1/cmr/bx/n/10 Evaluating the Se-cu-rity of Cryp-to-graphic Au-then-ti-ca-t
-ion Prim-
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] <./diagrams/MAC.pdf, id=9
+, 845.1575pt x 597.23125pt>
+File: ./diagrams/MAC.pdf Graphic file (type pdf)
+
+<use ./diagrams/MAC.pdf>
+Package pdftex.def Info: ./diagrams/MAC.pdf used on input line 35.
+(pdftex.def)             Requested size: 338.057pt x 238.88826pt.
+ [2 <D:/GitHub/rw_draft/diagrams/MAC.pdf>]
+Overfull \hbox (11.32474pt too wide) in paragraph at lines 56--57
+ \OT1/cmr/bx/n/10 Block-level Added Re-dun-dancy Ex-plicit Au-then-ti-ca-tion (
+AREA)[] \OT1/cmr/m/n/10 When
+ []
+
+[3]
+
+LaTeX Warning: Citation `Rogaway2011' on page 4 undefined on input line 75.
+
+
+LaTeX Warning: Citation `cbc1994' on page 4 undefined on input line 77.
+
+
+LaTeX Warning: Citation `signature' on page 4 undefined on input line 77.
+
+
+LaTeX Warning: Citation `prf' on page 4 undefined on input line 82.
+
+
+LaTeX Warning: Citation `cbc1994' on page 4 undefined on input line 82.
+
+
+LaTeX Warning: Citation `prf' on page 4 undefined on input line 84.
+
+
+LaTeX Warning: Citation `cbc1994' on page 4 undefined on input line 84.
+
+
+LaTeX Warning: Citation `prf' on page 4 undefined on input line 84.
+
+[4]
+Overfull \hbox (10.63004pt too wide) in paragraph at lines 97--97
+[]\OT1/cmr/bx/n/10 Block-level Added Re-dun-dancy Ex-plicit Au-then-ti-ca-tion 
+(AREA) 
  []
 
 
-LaTeX Warning: Citation `hm_survey' on page 3 undefined on input line 85.
+LaTeX Warning: Citation `hm_survey' on page 5 undefined on input line 100.
 
-<./diagrams/MA_concept.pdf, id=13, 663.07722pt x 281.85298pt>
+<./diagrams/MA_concept.pdf, id=35, 663.07722pt x 281.85298pt>
 File: ./diagrams/MA_concept.pdf Graphic file (type pdf)
 
 <use ./diagrams/MA_concept.pdf>
-Package pdftex.def Info: ./diagrams/MA_concept.pdf used on input line 88.
-(pdftex.def)             Requested size: 265.22618pt x 112.7392pt.
+Package pdftex.def Info: ./diagrams/MA_concept.pdf used on input line 103.
+(pdftex.def)             Requested size: 331.5378pt x 140.92615pt.
 
-Overfull \hbox (0.49951pt too wide) in paragraph at lines 85--92
+Overfull \hbox (0.49951pt too wide) in paragraph at lines 100--107
 \OT1/cmr/m/n/10 memory com-mu-ni-ca-tion, MA can be de-fined as the pro-cess to
  ver-ify that whether
  []
 
-[3]
-Overfull \hbox (7.45003pt too wide) in paragraph at lines 104--105
- \OT1/cmr/bx/n/10 Block- level Added Re-dun-dancy Ex-plicit Au-then-ti-ca-tion[
-] \OT1/cmr/m/n/10 Pa-pers propos-
- []
-
-[4 <D:/GitHub/rw_draft/diagrams/MA_concept.pdf>]
-<./diagrams/ma.pdf, id=46, 845.1575pt x 597.23125pt>
-File: ./diagrams/ma.pdf Graphic file (type pdf)
- <use ./diagrams/ma.pdf>
-Package pdftex.def Info: ./diagrams/ma.pdf used on input line 131.
-(pdftex.def)             Requested size: 338.057pt x 238.88826pt.
-
-
-LaTeX Warning: Citation `gcm' on page 5 undefined on input line 137.
-
-
-LaTeX Warning: Citation `cetd' on page 5 undefined on input line 137.
-
-<./diagrams/MAC.pdf, id=47, 845.1575pt x 597.23125pt>
-File: ./diagrams/MAC.pdf Graphic file (type pdf)
- <use ./diagrams/MAC.pdf>
-Package pdftex.def Info: ./diagrams/MAC.pdf used on input line 142.
-(pdftex.def)             Requested size: 338.057pt x 238.88826pt.
-
-[5]
-
-LaTeX Warning: Citation `Rogaway2011' on page 6 undefined on input line 151.
-
-[6 <D:/GitHub/rw_draft/diagrams/ma.pdf>]
-
-LaTeX Warning: Citation `cbc1994' on page 7 undefined on input line 153.
-
-
-LaTeX Warning: Citation `signature' on page 7 undefined on input line 153.
-
-
-LaTeX Warning: Citation `prf' on page 7 undefined on input line 158.
-
-
-LaTeX Warning: Citation `cbc1994' on page 7 undefined on input line 158.
-
-[7 <D:/GitHub/rw_draft/diagrams/MAC.pdf>]
-
-LaTeX Warning: Citation `prf' on page 8 undefined on input line 160.
-
-
-LaTeX Warning: Citation `cbc1994' on page 8 undefined on input line 160.
-
-
-LaTeX Warning: Citation `prf' on page 8 undefined on input line 160.
-
-[8] (D:\GitHub\rw_draft\rw_draft.aux)
+[5] [6 <D:/GitHub/rw_draft/diagrams/MA_concept.pdf>]
+(D:\GitHub\rw_draft\rw_draft.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 2940 strings out of 493921
- 42575 string characters out of 3152095
- 102881 words of memory out of 3000000
- 6250 multiletter control sequences out of 15000+200000
+ 2933 strings out of 493921
+ 42486 string characters out of 3152095
+ 103842 words of memory out of 3000000
+ 6244 multiletter control sequences out of 15000+200000
  5612 words of font info for 21 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 44i,8n,42p,758b,273s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,8n,42p,751b,271s stack positions out of 5000i,500n,10000p,200000b,50000s
 <G:/Tools/MikTex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><G:/Tools/MikTex/f
 onts/type1/public/amsfonts/cm/cmbx12.pfb><G:/Tools/MikTex/fonts/type1/public/am
 sfonts/cm/cmmi10.pfb><G:/Tools/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
 <G:/Tools/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><G:/Tools/MikTex/font
 s/type1/public/amsfonts/cm/cmr7.pfb><G:/Tools/MikTex/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb>
-Output written on rw_draft.pdf (8 pages, 303601 bytes).
+Output written on rw_draft.pdf (6 pages, 265796 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
+ 91 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
