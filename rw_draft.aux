@@ -23,23 +23,104 @@
 \@writefile{toc}{\contentsline {paragraph}{Chosen-message attacks}{4}}
 \@writefile{toc}{\contentsline {paragraph}{The Security Notions of MAC schemes}{4}}
 \@writefile{toc}{\contentsline {paragraph}{The Correlation between Security and Randomness}{4}}
-\citation{hm_survey}
+\citation{hmac}
 \@writefile{toc}{\contentsline {paragraph}{The Randomness of a MAC scheme}{5}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.2}Formal Method based Evaluation}{5}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.3}Automated Sound Security Evaluation}{5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Design Works of Authentication Primitives}{5}}
+\@writefile{toc}{\contentsline {paragraph}{What to say in this subsection}{5}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.1}Cryptographic Hash Functions}{5}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.2}Message Authentication Code(MAC) Scheme}{5}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.3}Block-level Added Redundancy Explicit Authentication (AREA)}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Message Authentication(MA) Systems:: the Implementation of Theoretical Model}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The Concept of MA System\relax }}{6}}
-\newlabel{ma_system}{{2}{6}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.1}Hash Function Based MA Systems}{6}}
-\@writefile{toc}{\contentsline {paragraph}{Uniprocessor System}{6}}
-\@writefile{toc}{\contentsline {paragraph}{Multiprocessor System}{6}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.2}MAC Function Based MA Systems}{6}}
-\@writefile{toc}{\contentsline {paragraph}{Uniprocessor System}{6}}
-\@writefile{toc}{\contentsline {paragraph}{Multiprocessor System}{6}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.3}Block-level AREA Based MA Systems}{6}}
-\@writefile{toc}{\contentsline {paragraph}{Uniprocessor System}{6}}
-\@writefile{toc}{\contentsline {paragraph}{Multiprocessor System}{6}}
+\@writefile{toc}{\contentsline {paragraph}{Iterated MAC Schemes}{5}}
+\citation{cbc1994}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The Raw CBC-MAC\relax }}{6}}
+\newlabel{CBC-mac }{{2}{6}}
+\@writefile{toc}{\contentsline {paragraph}{Raw CBC-MAC}{6}}
+\@writefile{toc}{\contentsline {paragraph}{EMAC}{6}}
+\citation{emac}
+\citation{xcbc}
+\citation{xcbc}
+\citation{new}
+\citation{tmac}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The class of CMAC\relax }}{7}}
+\newlabel{CMAC }{{3}{7}}
+\@writefile{toc}{\contentsline {paragraph}{XCBC: three key version of CMAC }{7}}
+\citation{tmac}
+\citation{new}
+\citation{omac}
+\citation{omac}
+\citation{alred}
+\citation{xor-mac}
+\citation{xor-mac}
+\citation{xor-mac}
+\@writefile{toc}{\contentsline {paragraph}{TMAC: two key version of CMAC}{8}}
+\@writefile{toc}{\contentsline {paragraph}{OMAC: single key version of CMAC}{8}}
+\@writefile{toc}{\contentsline {paragraph}{other iterated MAC designs}{8}}
+\@writefile{toc}{\contentsline {paragraph}{Parallel MAC Schemes}{8}}
+\@writefile{toc}{\contentsline {paragraph}{XOR MAC scheme}{8}}
+\citation{pmac}
+\citation{pmac}
+\citation{pmac_forgery}
+\citation{tweak}
+\citation{tweak_pmac}
+\citation{tweak_pmac}
+\citation{tweak_pmac}
+\citation{new}
+\citation{pmac}
+\citation{improve_pmac}
+\citation{pmac}
+\citation{new}
+\@writefile{toc}{\contentsline {paragraph}{Raw PMAC}{9}}
+\@writefile{toc}{\contentsline {paragraph}{Tweakable block cipher and Optimized PMAC}{9}}
+\citation{iPMAC}
+\citation{iPMAC}
+\citation{pmac}
+\citation{gcm}
+\citation{breaking}
+\citation{Rogaway2011}
+\citation{key_recover}
+\citation{cetd}
+\@writefile{toc}{\contentsline {paragraph}{iPMAC}{10}}
+\@writefile{toc}{\contentsline {paragraph}{Stately MAC Schemes}{10}}
+\@writefile{toc}{\contentsline {paragraph}{GMAC in GCM}{10}}
+\citation{hm_survey}
+\@writefile{toc}{\contentsline {paragraph}{Cost-Effective Tag Design}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.3}Block-level Added Redundancy Explicit Authentication (AREA)}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Message Authentication(MA) Systems:: the Implementation of Theoretical Model}{11}}
+\@writefile{toc}{\contentsline {paragraph}{What to say in this subsection}{11}}
+\@writefile{toc}{\contentsline {paragraph}{Concepts of Message Authentication(MA) System}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The Concept of MA System\relax }}{11}}
+\newlabel{ma_system}{{4}{11}}
+\bibstyle{plain}
+\bibdata{./resources/tag_paper.bib}
+\bibcite{hmac}{1}
+\bibcite{xor-mac}{2}
+\bibcite{cbc1994}{3}
+\bibcite{xcbc}{4}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.1}Hash Function Based MA Systems}{12}}
+\@writefile{toc}{\contentsline {paragraph}{Uniprocessor System}{12}}
+\@writefile{toc}{\contentsline {paragraph}{Multiprocessor System}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.2}MAC Function Based MA Systems}{12}}
+\@writefile{toc}{\contentsline {paragraph}{Uniprocessor System}{12}}
+\@writefile{toc}{\contentsline {paragraph}{Multiprocessor System}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.3}Block-level AREA Based MA Systems}{12}}
+\@writefile{toc}{\contentsline {paragraph}{Uniprocessor System}{12}}
+\@writefile{toc}{\contentsline {paragraph}{Multiprocessor System}{12}}
+\bibcite{pmac}{5}
+\bibcite{alred}{6}
+\bibcite{prf}{7}
+\bibcite{signature}{8}
+\bibcite{key_recover}{9}
+\bibcite{cetd}{10}
+\bibcite{omac}{11}
+\bibcite{breaking}{12}
+\bibcite{tmac}{13}
+\bibcite{pmac_forgery}{14}
+\bibcite{tweak}{15}
+\bibcite{gcm}{16}
+\bibcite{new}{17}
+\bibcite{improve_pmac}{18}
+\bibcite{emac}{19}
+\bibcite{tweak_pmac}{20}
+\bibcite{Rogaway2011}{21}
+\bibcite{iPMAC}{22}
