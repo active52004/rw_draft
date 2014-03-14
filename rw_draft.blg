@@ -7,45 +7,45 @@ Warning--I didn't find a database entry for "hm_survey"
 Warning--can't use both volume and number fields in cbc1994
 Warning--empty booktitle in tweak
 Warning--empty journal in Rogaway2011
-You've used 22 entries,
+You've used 31 entries,
             2118 wiz_defined-function locations,
-            639 strings with 8754 characters,
-and the built_in function-call counts, 9369 in all, are:
-= -- 987
-> -- 327
-< -- 18
-+ -- 127
-- -- 105
-* -- 596
-:= -- 1384
-add.period$ -- 68
-call.type$ -- 22
-change.case$ -- 118
+            688 strings with 10510 characters,
+and the built_in function-call counts, 13162 in all, are:
+= -- 1389
+> -- 440
+< -- 25
++ -- 172
+- -- 141
+* -- 822
+:= -- 1927
+add.period$ -- 95
+call.type$ -- 31
+change.case$ -- 163
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 425
-empty$ -- 778
-format.name$ -- 105
-if$ -- 2103
+cite$ -- 34
+duplicate$ -- 606
+empty$ -- 1111
+format.name$ -- 141
+if$ -- 2968
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 22
-newline$ -- 114
-num.names$ -- 46
-pop$ -- 154
+int.to.str$ -- 31
+missing$ -- 31
+newline$ -- 159
+num.names$ -- 64
+pop$ -- 216
 preamble$ -- 1
-purify$ -- 96
+purify$ -- 132
 quote$ -- 0
-skip$ -- 338
+skip$ -- 486
 stack$ -- 0
-substring$ -- 730
-swap$ -- 166
-text.length$ -- 18
+substring$ -- 1048
+swap$ -- 240
+text.length$ -- 25
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 88
+type$ -- 124
 warning$ -- 3
-while$ -- 102
-width$ -- 24
-write$ -- 257
+while$ -- 145
+width$ -- 33
+write$ -- 359
 (There were 4 warnings)

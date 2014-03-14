@@ -21,6 +21,22 @@ M~Bellare, J~Kilian, and P~Rogaway.
   volume 839 of {\em Lecture Notes in Computer Science}, pages 341--358.
   International Association for Cryptologic Research, Springer-Verlag, 1994.
 
+\bibitem{AE_mode}
+M~Bellare and C~Namprempre.
+\newblock {Authenticated encryption: relations among notions and analysis of
+  the generic composition paradigm}.
+\newblock In {\em Advances in Cryptology - ASIACRYPT 2000. 6th International
+  Conference on the Theory and Application of Cryptology and Information
+  Security. Proceedings (Lecture Notes in Computer Science Vol.1976)}, pages
+  531 -- 45, Berlin, Germany, 2000.
+
+\bibitem{eax}
+M~Bellare, P~Rogaway, and D~Wagner.
+\newblock {The EAX mode of operation}.
+\newblock In {\em Fast Software Encryption. 11th International Workshop, FSE
+  2004. Revised Papers (Lecture Notes in Comput. Sci. Vol.3017)}, pages
+  389--407, 2004.
+
 \bibitem{xcbc}
 J~Black and P~Rogaway.
 \newblock {CBC MACs for arbitrary-length messages: the three-key
@@ -84,6 +100,25 @@ T~Iwata, K~Ohashi, and K~Minematsu.
 \newblock In {\em 32nd Annual Cryptology Conference. Advances in Cryptology -
   CRYPTO 2012}, pages 31--49, Berlin, Germany, 2012.
 
+\bibitem{ccm}
+J~Jonsson.
+\newblock {On the security of CTR+CBC-MAC}.
+\newblock In {\em Selected Areas in Cryptography. 9th Annual International
+  Workshop, SAC 2002. Revised Papers (Lecture Notes in Computer Science
+  Vol.2595)}, pages 76--93, 2003.
+
+\bibitem{fast}
+E~Kasper and P~Schwabe.
+\newblock {Faster and timing-attack resistant AES-GCM}.
+\newblock In {\em Cryptographic Hardware and Embedded Systems - CHES 2009.
+  Proceedings 11th International Workshop}, pages 1--17, 2009.
+
+\bibitem{hardware_attack}
+Markus~G Kuhn.
+\newblock {Cipher instruction search attack on the bus-encryption security
+  microcontroller DS5002FP}.
+\newblock {\em IEEE Transactions on Computers}, 47(10):1153--1157, 1998.
+
 \bibitem{tmac}
 K~Kurosawa and T~Iwata.
 \newblock {TMAC: two-key CBC MAC}.
@@ -133,6 +168,12 @@ F~Petrank and C~Rackoff.
 \newblock {CBC MAC for real-time data sources}.
 \newblock {\em J. Cryptol. (USA)}, 13(3):315 -- 38, 2000.
 
+\bibitem{aead}
+P~Rogaway.
+\newblock {Authenticated-encryption with associated-data}.
+\newblock In {\em Proceedings of the ACM Conference on Computer and
+  Communications Security}, pages 98--107, Washington, DC, United states, 2002.
+
 \bibitem{tweak_pmac}
 P~Rogaway.
 \newblock {Efficient instantiations of tweakable blockciphers and refinements
@@ -147,11 +188,29 @@ P~Rogaway.
 \newblock {Evaluation of some blockcipher modes of operation}.
 \newblock 2011.
 
+\bibitem{ocb}
+P~Rogaway and J~Black.
+\newblock {OCB: a block-cipher mode of operation for efficient authenticated
+  encryption}.
+\newblock {\em ACM Trans. Inf. Syst. Secur. (USA)}, 6(3):365--403, 2003.
+
+\bibitem{cycle}
+M-JO Saarinen.
+\newblock {Cycling attacks on GCM, GHASH and other polynomial MACs and hashes}.
+\newblock In {\em Fast Software Encryption. 19th International Workshop, FSE
+  2012. Revised Selected Papers}, pages 216 ---- 25, 2012.
+
 \bibitem{iPMAC}
 P~Sarkar.
 \newblock {Pseudo-random functions and parallelizable modes of operations of a
   block cipher}.
 \newblock {\em IEEE Transactions on Information Theory}, 56(8):4025--4037,
   2010.
+
+\bibitem{attack_blk}
+Z~Yuan, W~Wang, K~Jia, G~Xu, and X~W.
+\newblock {New birthday attacks on some MACs based on block ciphers}.
+\newblock In {\em Advances in Cryptology - CRYPTO 2009. Proceedings 29th Annual
+  International Cryptology Conference}, pages 209 -- 30, Berlin, Germany, 2009.
 
 \end{thebibliography}
