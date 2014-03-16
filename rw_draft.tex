@@ -258,31 +258,62 @@ If the MA system finds that the D is tampered, MA sends a failure signal to proc
 \paragraph{Security Evaluation for MA Systems}
 
 
+Gassend et al. proposed an integrity protection architecture in 2003 \cite{keylist}. The AP used in this design can be either hash function of MAC, not specificated. 
+Q: What is the contribution of this architecture? Off-chip processing faster? On-chip cost smaller?
+Can this architecture defend type 2 attack?
+
+This is the procedure to analyze the security of an MA system
+\begin{enumerate}
+	\item What AP adopted
+	\item What is the requirements of AP to be secure
+	\item Do MA meets the requirements? How
+	\item how is secret info protected?
+	\item is AP systematically analyzed? Attacks defend? analyze article?
+	\item security conclusion
+	\item what stored on-chip what off-chip. Cost, performace
+	
+\end{enumerate}
+
 \subsubsection{Hash Function Based MA Systems}
 \paragraph{Uniprocessor System}
-In 2003 \cite{keylist}, Suh et al. introduced a hardware design aiming to provide protection the confidentiality and integrity of off-chi memory. In their design, the message authentication system is based on a hash function.
+Suh et al. introduced a architecture to protect A and E, published in 2003 \cite{keylist}.
+\begin{itemize}
+	\item Using New design hash function MSet-Add-Hash based on the hash function MD5
+	\item what is requirements on input
+	\item how does this design met the requirements
+	\item how do security info protected? secure?
+	\item MSet is systematically analyzed in \cite{keylist}. can MSet-hash defend type 2 attack? how?
+	\item security conclusion 
+	\item on-chip, off-chip, cost
+\end{itemize}
 
-Gassend et al. developed a integrity verification mechanism in 2003 \cite{keylist}. Merkly tree, AP is hash function or MAC.
-
-  
 
 
 \paragraph{Multiprocessor System}
 
-
 \subsubsection{MAC Function Based MA Systems}
 \paragraph{Uniprocessor System}
-XOM: vulnerable to replay attack, analyzed by another paper
+XOM\cite{keylist}: vulnerable to replay attack, analyzed by another paper. It`s optimization \cite{keylist} can defend replay attack.
 
-Yan`s design: 
+Yan`s design: \cite{keylist} 2006
 \begin{itemize}
 	\item the AP is GCM, faster than hash(MD5)
-	\item timely authentication
+	\item GCM require distinct IV as nonce for each invocation of GCM(each data)
+	\item In Yan`s Design, for each message , IV is distinct(counter split), How to ensure the IV distinct?
+	\item the security of secret information used in authentication(KEY, iv) is protected by merkely tree, secure? why?
+	\item assume the requirement is met, GCM is secure according to the analysis in \cite{keylist}, so the design is secure.
 	\item What add data is stored on-chip? what is stored off-chip on memory? On-chip cost?
-	\item How to ensure the IV distinct?
+	
 \end{itemize}use timely authentication other than lazy authentication. use fast authentiation method other than hash(MD5).
 
-Rogers` design:protect code and data; 
+Vaslin`s design \cite{keylist} adopted CRC checksum for authentication, CRC is less security compared to hash function and MAC scheme.
+
+Rogers` design: \cite{keylist} 2009:
+\begin{itemize}
+	\item The AP is PMAC parallel processing
+	\item to 
+\end{itemize}
+
 Mei`s design:
 \paragraph{Multiprocessor System}
 
