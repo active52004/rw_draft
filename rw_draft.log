@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  16 MAR 2014 12:08
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  17 MAR 2014 11:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -235,11 +235,6 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-Overfull \hbox (9.35506pt too wide) in paragraph at lines 8--8
-[]\OT1/cmr/bx/n/10 Motivation: Data In-tegrity Threat Model for Processor-Memor
-y
- []
-
 [1
 
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
@@ -256,20 +251,16 @@ AREA)[] \OT1/cmr/m/n/10 When
  []
 
 [3] [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 97.
- (/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 97.
- [5]
-<./diagrams/cbc-mac.pdf, id=40, 845.1575pt x 597.23125pt>
+
+LaTeX Warning: Citation `keylist' on page 5 undefined on input line 102.
+
+<./diagrams/cbc-mac.pdf, id=36, 845.1575pt x 597.23125pt>
 File: ./diagrams/cbc-mac.pdf Graphic file (type pdf)
 
 <use ./diagrams/cbc-mac.pdf>
 Package pdftex.def Info: ./diagrams/cbc-mac.pdf used on input line 112.
 (pdftex.def)             Requested size: 253.54921pt x 179.17075pt.
- [6 <./diagrams/cbc-mac.pdf>]
+ [5] [6 <./diagrams/cbc-mac.pdf>]
 <./diagrams/cmac.pdf, id=58, 845.1575pt x 597.23125pt>
 File: ./diagrams/cmac.pdf Graphic file (type pdf)
 
@@ -277,35 +268,55 @@ File: ./diagrams/cmac.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./diagrams/cmac.pdf used on input line 132.
 (pdftex.def)             Requested size: 253.54921pt x 179.17075pt.
  [7 <./diagrams/cmac.pdf>] [8] [9] [10]
-Overfull \hbox (10.63004pt too wide) in paragraph at lines 235--235
+Overfull \hbox (10.63004pt too wide) in paragraph at lines 231--231
 []\OT1/cmr/bx/n/10 Block-level Added Re-dun-dancy Ex-plicit Au-then-ti-ca-tion 
 (AREA) 
  []
 
-[11] <./diagrams/MA_concept.pdf, id=89, 663.07722pt x 281.85298pt>
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 236.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 236.
+
+<./diagrams/MA_concept.pdf, id=86, 663.07722pt x 281.85298pt>
 File: ./diagrams/MA_concept.pdf Graphic file (type pdf)
 
 <use ./diagrams/MA_concept.pdf>
-Package pdftex.def Info: ./diagrams/MA_concept.pdf used on input line 249.
+Package pdftex.def Info: ./diagrams/MA_concept.pdf used on input line 245.
 (pdftex.def)             Requested size: 331.5378pt x 140.92615pt.
- [12 <./diagrams/MA_concept.pdf>]
+ [11]
 
-LaTeX Warning: Citation `keylist' on page 13 undefined on input line 261.
+LaTeX Warning: Citation `keylist' on page 12 undefined on input line 257.
 
+[12 <./diagrams/MA_concept.pdf>]
 
-LaTeX Warning: Citation `keylist' on page 13 undefined on input line 278.
-
-
-LaTeX Warning: Citation `keylist' on page 13 undefined on input line 284.
+LaTeX Warning: Citation `keylist' on page 13 undefined on input line 275.
 
 
-LaTeX Warning: Citation `keylist' on page 13 undefined on input line 297.
+LaTeX Warning: Citation `keylist' on page 13 undefined on input line 281.
 
-[13]
 
-LaTeX Warning: Citation `keylist' on page 14 undefined on input line 303.
+LaTeX Warning: Citation `keylist' on page 13 undefined on input line 292.
 
-(./rw_draft.bbl [14] [15]
+
+LaTeX Warning: Citation `keylist' on page 13 undefined on input line 292.
+
+
+LaTeX Warning: Citation `keylist' on page 13 undefined on input line 294.
+
+
+LaTeX Warning: Citation `keylist' on page 13 undefined on input line 300.
+
+
+LaTeX Warning: Citation `keylist' on page 13 undefined on input line 305.
+
+
+LaTeX Warning: Citation `keylist' on page 13 undefined on input line 307.
+
+[13] (./rw_draft.bbl [14] [15]
 Underfull \hbox (badness 2913) in paragraph at lines 139--145
 []\OT1/cmr/m/n/10 M. Liskov, R.L. Rivest, and D. Wag-ner.  Tweak-able block ci-
 
@@ -332,7 +343,7 @@ sr/local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 /local/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/lo
 cal/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
 al/texlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on rw_draft.pdf (17 pages, 365709 bytes).
+Output written on rw_draft.pdf (17 pages, 365915 bytes).
 PDF statistics:
  164 PDF objects out of 1000 (max. 8388607)
  106 compressed objects within 2 object streams

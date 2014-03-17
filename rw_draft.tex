@@ -5,7 +5,7 @@
 \begin{document}
 \section{Related Works} 
 \subsection{Preliminaries}
-\subsubsection{Motivation: Data Integrity Threat Model for Processor-Memory Architecture}
+\subsubsection{Data Integrity Threat Model for Processor-Memory Architecture}
 In the scenario of processor-memory architecture, data integrity refers to maintaining the data on the transmission outside the chip and stored on off-chip memory untampered. If the data stored on off-chip memory , or some external data injected to the system S, we can say that the data integrity of S is attacked. If the system S can not examine the tampered data or injected data, the attack is assumed to be successful. According to our knowledge, there are two aspects of attacks on data integrity:
 \begin{enumerate}
 	\item Introducing new content: The content of data in the system is modified, or data construct by the attacker is inserted to the system.
@@ -66,7 +66,8 @@ If the integrity of a processor-memory system is protected by AREA, the possible
 \end{enumerate}
 If an AREA system is capable to defend the 1st and 2nd attacks in the list, it should ensure that for any data block D, the nonce is randomly assigned, which makes the cipherter block C=E$_k$(D $\mid$ N) a random value. If this scheme is capable to defend the 3rd and 4th attacks too, it should ensure for any two identical data blocks D1 and D2 that are writen to memory on different time or to different addresses, their nonces N1 and N2 should be randomly generated and make the related C1 and C2 random values.
 
-\subsection{Security Evaluation for Authentication Primitives:the Approaches}
+
+\subsection{Evaluating the Security of AP Designs}
 \subsubsection{Computational Provable Security}
 \paragraph{The forgery attacks}
 When attacking a message authentication system, the adversary try to send a pair(M,T) to the receiver to make VF$_k$(M,T)=1 while M did not originate with the legal sender. The fake pair(M$_f$,T$_f$) that makes VF$_k$(M$_f$,T$_f$)=1 is called a forgery from the adversary. A successful forgery attack indicates that the adversary has made a forgery. 
@@ -88,19 +89,25 @@ Let F$_0$ and F$_1$ be two function with a common domain D and a common range R.
 We can see that if F0 behaves much like F1, it is hard for A to distinguish between F0 and F1 then Adv$^{F0}_{F1}$ is very small. This case is adopted by Bellare et al. in the quantitative notion of randomness of a MAC scheme. If the randomness of a MAC scheme is good, then the MAC scheme behaves like a PRF and Adv$^{[PRF]}_{MAC}$ is small. 
 
 \subsubsection{Formal Method based Evaluation}
+
+
+
 \subsubsection{Automated Sound Security Evaluation}
+Computational provable security model is sound, but the procedure is manually and informal, easy to results wrong. 
+Formal methods can do the evaluation automatically, but the security notion is too touch, not realistic and the final result is not sound.
 
+Research works have ben proposed that aim to design a new mechanism combining the advantages of both two models and containing no serious flaws. Early works try to introduce the security notion and concepts from computational provable security to formal method model, which will result automative security analysis whose results are sound.
+Add the drawbacks of these early research works.
 
-\subsection{Design Works of Authentication Primitives}
-\paragraph{What to say in this subsection}
-\begin{itemize}
-	\item For each type of AP, the designs
-	\item For each design, the security analysis and result
-\end{itemize}
+Recent research works try to make designs from the opposite way by modifying the analysis procedure of computational provable security model to make the analysis automative. Hence the analysis results of computational provable security model is sound, the results of automatic evaluation framework is sound. 
 
+\subsection{AP Designs}
 \subsubsection{Cryptographic Hash Functions}
 Bellare, Canetti, and Krawczyk designed two authentication models in \cite{hmac}, the nested construction NMAC and the hash based scheme HMAC. The advantage of HMAC compared with MAC schemes constructed by block cipher is the fast processing speed and simpler in implementation. 
 In this paper, the authors analyzed the security of NMAC and HAMC and provided a quantitative security result based on the security notion that HMAC is secure is the hash function used behaves like a PRF.  
+
+Suh et al. introduced an hash function design in \cite{keylist} aiming to protect the integrity of message.
+
 \subsubsection{Message Authentication Code(MAC) Scheme}
 \paragraph{Iterated MAC Schemes}
 For a deterministic MAC scheme, a secrete key is used in processing message M and generating the tag T. The deterministic MAC design works can be categroized to iterated MAC scheme and parallel MAC scheme. 
@@ -205,10 +212,6 @@ In \cite{breaking}, Iwata, Ohashi and Minematsu provided an optimised analysis f
 In \cite{Rogaway2011}, Rogaway pointed the weakness of GMAC as a MAC scheme when used alone that the security under adaptive chosen-message attack is not as good as the security of deterministic MAC schemes. On the other hand, GMAC requires the nonce for tag generation and this nonce should be maintained and refreshed by the user of GMAC. The potential issue of this design pointed by Rogaway is the reuse of nonce, which may lead to the collision of the tag. 
 
 Handschuh and Preneel introduced key-recovery attacks on universal hash function based MAC algorithms in \cite{key_recover}. They introduced two types of attacks: weak key finding and partial information leaks.
-
-\paragraph{Cost-Effective Tag Design}
-Hong, Guo and Hu introduced a parallel MAC design in \cite{cetd}.
-In their design, the inputs are ciphertext blocks(called encrypted cache line in this paper). A nonce is generated by encrypting a (address,counter,random) pair and then used in controlling the tag generation. The pair used in generating the nonce is consist of the virtual address of the ciphertext blocks, a random number and a counter. The inputs are processed in two stages: bit segment swap between 2 input blocks for several rounds and the block rotate shift. The parameters of each stage are segements in the nonce.
 
 \subsubsection{The Authenticated Encryption Schemes}
 After various kind of MAC schemes were evaluated and claimed to be secure, a new cryptosystem, the Authenticated Encryption(AE) was introduced The Authenticated to combine the encryption of
@@ -315,6 +318,9 @@ Rogers` design: \cite{keylist} 2009:
 \end{itemize}
 
 Mei`s design:
+\paragraph{Cost-Effective Tag Design}
+Hong, Guo and Hu introduced a parallel MAC design in \cite{cetd}.
+In their design, the inputs are ciphertext blocks(called encrypted cache line in this paper). A nonce is generated by encrypting a (address,counter,random) pair and then used in controlling the tag generation. The pair used in generating the nonce is consist of the virtual address of the ciphertext blocks, a random number and a counter. The inputs are processed in two stages: bit segment swap between 2 input blocks for several rounds and the block rotate shift. The parameters of each stage are segements in the nonce.
 \paragraph{Multiprocessor System}
 
 Shi et al. proposed a MA system for multiprocessor shared memory architecture. It is an Encrypt-and-MAC scheme and the MAC is generated with hash function Sha 256.

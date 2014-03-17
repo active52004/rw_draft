@@ -1,7 +1,7 @@
 \relax 
 \@writefile{toc}{\contentsline {section}{\numberline {1}Related Works}{1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Preliminaries}{1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.1.1}Motivation: Data Integrity Threat Model for Processor-Memory Architecture}{1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.1.1}Data Integrity Threat Model for Processor-Memory Architecture}{1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.1.2}Protection of Integrity: Theoretical Models}{1}}
 \@writefile{toc}{\contentsline {paragraph}{Cryptographic Hash Functions}{1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The Concept of Deterministic MAC Scheme\relax }}{2}}
@@ -9,7 +9,7 @@
 \newlabel{deterministic_mac }{{1}{2}}
 \@writefile{toc}{\contentsline {paragraph}{Message Authentication Code(MAC) Schemes}{2}}
 \@writefile{toc}{\contentsline {paragraph}{Block-level Added Redundancy Explicit Authentication (AREA)}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Security Evaluation for Authentication Primitives:the Approaches}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Evaluating the Security of AP Designs}{3}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.1}Computational Provable Security}{3}}
 \@writefile{toc}{\contentsline {paragraph}{The forgery attacks}{3}}
 \citation{Rogaway2011}
@@ -24,20 +24,20 @@
 \@writefile{toc}{\contentsline {paragraph}{The Security Notions of MAC schemes}{4}}
 \@writefile{toc}{\contentsline {paragraph}{The Correlation between Security and Randomness}{4}}
 \citation{hmac}
+\citation{keylist}
 \@writefile{toc}{\contentsline {paragraph}{The Randomness of a MAC scheme}{5}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.2}Formal Method based Evaluation}{5}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.2.3}Automated Sound Security Evaluation}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Design Works of Authentication Primitives}{5}}
-\@writefile{toc}{\contentsline {paragraph}{What to say in this subsection}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}AP Designs}{5}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.1}Cryptographic Hash Functions}{5}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.2}Message Authentication Code(MAC) Scheme}{5}}
 \@writefile{toc}{\contentsline {paragraph}{Iterated MAC Schemes}{5}}
 \citation{cbc1994}
+\citation{emac}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces The Raw CBC-MAC\relax }}{6}}
 \newlabel{CBC-mac }{{2}{6}}
 \@writefile{toc}{\contentsline {paragraph}{Raw CBC-MAC}{6}}
 \@writefile{toc}{\contentsline {paragraph}{EMAC}{6}}
-\citation{emac}
 \citation{xcbc}
 \citation{xcbc}
 \citation{new}
@@ -45,6 +45,7 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The class of CMAC\relax }}{7}}
 \newlabel{CMAC }{{3}{7}}
 \@writefile{toc}{\contentsline {paragraph}{XCBC: three key version of CMAC }{7}}
+\@writefile{toc}{\contentsline {paragraph}{TMAC: two key version of CMAC}{7}}
 \citation{tmac}
 \citation{new}
 \citation{omac}
@@ -53,7 +54,6 @@
 \citation{xor-mac}
 \citation{xor-mac}
 \citation{xor-mac}
-\@writefile{toc}{\contentsline {paragraph}{TMAC: two key version of CMAC}{8}}
 \@writefile{toc}{\contentsline {paragraph}{OMAC: single key version of CMAC}{8}}
 \@writefile{toc}{\contentsline {paragraph}{other iterated MAC designs}{8}}
 \@writefile{toc}{\contentsline {paragraph}{Parallel MAC Schemes}{8}}
@@ -70,9 +70,9 @@
 \citation{improve_pmac}
 \citation{pmac}
 \citation{new}
+\citation{iPMAC}
 \@writefile{toc}{\contentsline {paragraph}{Raw PMAC}{9}}
 \@writefile{toc}{\contentsline {paragraph}{Tweakable block cipher and Optimized PMAC}{9}}
-\citation{iPMAC}
 \citation{iPMAC}
 \citation{pmac}
 \citation{gcm}
@@ -82,7 +82,6 @@
 \@writefile{toc}{\contentsline {paragraph}{Stately MAC Schemes}{10}}
 \@writefile{toc}{\contentsline {paragraph}{GMAC and GCM}{10}}
 \citation{key_recover}
-\citation{cetd}
 \citation{AE_mode}
 \citation{aead}
 \citation{aead}
@@ -97,35 +96,40 @@
 \citation{cycle}
 \citation{attack_blk}
 \citation{hardware_attack}
-\@writefile{toc}{\contentsline {paragraph}{Cost-Effective Tag Design}{11}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.3}The Authenticated Encryption Schemes}{11}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.4}Block-level Added Redundancy Explicit Authentication (AREA)}{12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Message Authentication(MA) Systems:: the Implementation of Theoretical Model}{12}}
-\@writefile{toc}{\contentsline {paragraph}{What to say in this subsection}{12}}
-\@writefile{toc}{\contentsline {paragraph}{Concepts of Message Authentication(MA) System}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.3.4}Block-level Added Redundancy Explicit Authentication (AREA)}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Message Authentication(MA) Systems:: the Implementation of Theoretical Model}{11}}
+\@writefile{toc}{\contentsline {paragraph}{What to say in this subsection}{11}}
+\@writefile{toc}{\contentsline {paragraph}{Concepts of Message Authentication(MA) System}{11}}
+\citation{keylist}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The Concept of MA System\relax }}{12}}
 \newlabel{ma_system}{{4}{12}}
+\@writefile{toc}{\contentsline {paragraph}{Security Evaluation for MA Systems}{12}}
 \citation{keylist}
 \citation{keylist}
 \citation{keylist}
 \citation{keylist}
-\@writefile{toc}{\contentsline {paragraph}{Security Evaluation for MA Systems}{13}}
+\citation{keylist}
+\citation{keylist}
+\citation{keylist}
+\citation{keylist}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.1}Hash Function Based MA Systems}{13}}
 \@writefile{toc}{\contentsline {paragraph}{Uniprocessor System}{13}}
 \@writefile{toc}{\contentsline {paragraph}{Multiprocessor System}{13}}
-\citation{keylist}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.2}MAC Function Based MA Systems}{13}}
+\@writefile{toc}{\contentsline {paragraph}{Uniprocessor System}{13}}
+\citation{cetd}
 \bibstyle{plain}
 \bibdata{./resources/tag_paper.bib}
 \bibcite{hmac}{1}
 \bibcite{xor-mac}{2}
 \bibcite{cbc1994}{3}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.2}MAC Function Based MA Systems}{14}}
-\@writefile{toc}{\contentsline {paragraph}{Uniprocessor System}{14}}
+\bibcite{AE_mode}{4}
+\@writefile{toc}{\contentsline {paragraph}{Cost-Effective Tag Design}{14}}
 \@writefile{toc}{\contentsline {paragraph}{Multiprocessor System}{14}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {1.4.3}Block-level AREA Based MA Systems}{14}}
 \@writefile{toc}{\contentsline {paragraph}{Uniprocessor System}{14}}
 \@writefile{toc}{\contentsline {paragraph}{Multiprocessor System}{14}}
-\bibcite{AE_mode}{4}
 \bibcite{eax}{5}
 \bibcite{xcbc}{6}
 \bibcite{pmac}{7}
