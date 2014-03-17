@@ -68,12 +68,25 @@ If an AREA system is capable to defend the 1st and 2nd attacks in the list, it s
 
 
 \subsection{Evaluating the Security of AP Designs}
+\paragraph{What to Say}
+\begin{itemize}
+	\item What is the security notion of provable, how to quatify the security of AP, the weakness
+	\item What is the properties of formal method, how to quantify the security of AP, the weakness
+	\item, why provable security is err-prone, why formal method is not concrete or sound
+	\item early automative proof, as they have the weakness of formal methods, their security assumption are unrealistic
+	\item 	
+\end{itemize}
 \subsubsection{Computational Provable Security}
+Existential forgery under chosen-message attack.\cite{keylist}.In the security notions of computational provable security, computatoin time or No. of attack rounds determine the probabiltiy of success: the adversary can always succeed if the attack rounds allowed is unlimited; otherwise the probability of success is expressed in quantity of No. of attack rounds.
+
+In the analysis model of computational provable security, the security is quantified by the probability of successful forgery.
+
 \paragraph{The forgery attacks}
-When attacking a message authentication system, the adversary try to send a pair(M,T) to the receiver to make VF$_k$(M,T)=1 while M did not originate with the legal sender. The fake pair(M$_f$,T$_f$) that makes VF$_k$(M$_f$,T$_f$)=1 is called a forgery from the adversary. A successful forgery attack indicates that the adversary has made a forgery. 
+When attacking a authentication primitive, the adversary try to send a pair(M,T) to the receiver to make VF$_k$(M,T)=1 while M did not originate with the legal sender. The fake pair(M$_f$,T$_f$) that makes VF$_k$(M$_f$,T$_f$)=1 is called a forgery from the adversary. A successful forgery attack indicates that the adversary has made a forgery. 
 The purpose of a message authentication system is preventing the receiver to accept the message from unauthorized senders, such as an adversary. The quantitative property of a secure message authentication system is the low probability for an adversary to make a successful forgery attack with the limited resource.
 \paragraph{Chosen-message attacks}
 A strong type of attack that an adversary can conduct on the message authentication system is the adaptive chosen-message attack, marked as uf-cma. When doing uf-cma, the adversary chooses its own input message M and acquires the relative tag T. The adversary try to find the weakness in the design of message authentication system by analyzing the pairs(M,T) of his choice. The uf-cma provides the adversary with the most capability to succeed in the forgery attack. The probability that an adversary conducts a successful forgery attack after limited times of uf-cma is adopted as the basic quantitative security property of a message authentication in cryptography. This fact was also mentioned in \cite{Rogaway2011}.
+
 \paragraph{The Security Notions of MAC schemes}
 The formalised quantitative notion of the security of a MAC scheme was introduced by Bellare et al. in \cite{cbc1994}. This notion follows the security notion of digital signature introduced in \cite{signature}. The successful forgery on a MAC scheme from an adversary A is measured by a experiment called Forgery(MAC,A). In Forgery(MAC,A),  
 the adversary A is provided a black-box access to the tag generation system TG$_K$(). When TG$_K$() takes an input message M$_i$, it returns tag T$_i$ to A. A conducts uf-cma by keep sending the message queries M$_i$ and observes the relative tag T$_i$ for limited times. On the other hand, A is provided a black-box access to the verification system VF$_K$(). When A sends a pair(M$_j$,T$_j$) to VF$_K$(), the VF$_K$() computes the tag T of M$_j$ and compares T with T$_j$. If T=T$_j$ then VF$_K$()=1 otherwise 0. If A sends a pair(M,T) that makes VF$_K$() outputs 1 while M has not appeared in the previous queries of uf-cma, then A succeeds a forgery attack and Forgery(MAC,A)=1.
@@ -89,7 +102,7 @@ Let F$_0$ and F$_1$ be two function with a common domain D and a common range R.
 We can see that if F0 behaves much like F1, it is hard for A to distinguish between F0 and F1 then Adv$^{F0}_{F1}$ is very small. This case is adopted by Bellare et al. in the quantitative notion of randomness of a MAC scheme. If the randomness of a MAC scheme is good, then the MAC scheme behaves like a PRF and Adv$^{[PRF]}_{MAC}$ is small. 
 
 \subsubsection{Formal Method based Evaluation}
-
+Dolev-Yao \cite{keylist} framework is an approach aiming to evaluation the security of an cryptographic primitive automatically. This model is based on the princples of formal methods. 
 
 
 \subsubsection{Automated Sound Security Evaluation}
