@@ -13,7 +13,7 @@ In the scenario of processor-memory architecture, data integrity refers to maint
 \end{enumerate}
 
 \subsubsection{Protection of Integrity: Theoretical Models}
-The goal of integrity protection can be defined as the capability to examine whether the data to read by processor has been tampered. According to our knowledge, there are three common types of cryptographic primitives aiming to protect the data integrity of a system, which are cryptographic hash function, Message Authentication Code(MAC) scheme and block-level Added Redundancy Explicit Authentication (AREA). These theoretical models for integrity protection is also called Authentication Primitives(AP) in some research works.
+The goal of integrity protection can be defined as the capability to examine whether the data to read by processor has been tampered. Cryptographic hash function and Message Authentication Code(MAC) scheme are common cryptographic primitives aiming to protect the data integrity of a system. These theoretical models for integrity protection is also called Authentication Primitives(AP) in some research works.
 
 \paragraph{Cryptographic Hash Functions}
 Hash is a short message block computed by hash function with data block D as input.
@@ -51,21 +51,6 @@ If the integrity of a processor-memory system is protected by MAC scheme, the po
 	\item Replace the content of a data-tag pair with a copy of this pair in an old time point
 \end{enumerate}
 If a MAC scheme is capable to defend the 1st and 2nd attacks in the list, it should ensure that for any data block D, the tag is randomly assigned. If this scheme is capable to defend the 3rd and 4th attacks too, it should ensure for any two identical data blocks D1 and D2 that are writen to memory on different time or to different addresses, their tags T1 and T2 should be randomly generated.
-
-\paragraph{Block-level  Added Redundancy Explicit Authentication (AREA)}
-When the processor writes a data block D to memory, AREA concatenated a nonce N to D to form a data-nonce pair. This data-nonce pair is encrypted to form a ciphertext block E$_k$(D $\mid$ N). The ciphertext block is stored on off-chip memory.
-
-When the processor reads a data block from memory, the ciphertext block is read to the chip and sent to AREA. After decryption, the nonce part of the pair, marked as N2, is compared to the nonce on-chip that is related to data D, marked as N1. If N1 and N2 are identical, D is assumed to be untampered.
-
-If the integrity of a processor-memory system is protected by AREA, the possible attacks are:
-\begin{enumerate}
-	\item Modify the content of a E$_k$(D $\mid$ N)
-	\item Insert new E$_k$(D $\mid$ N)
-	\item Replace the content of a E$_k$(D $\mid$ N) with a copy from other address
-	\item Replace the content of a E$_k$(D $\mid$ N) with a copy of this ciphertext block in an old time point
-\end{enumerate}
-If an AREA system is capable to defend the 1st and 2nd attacks in the list, it should ensure that for any data block D, the nonce is randomly assigned, which makes the cipherter block C=E$_k$(D $\mid$ N) a random value. If this scheme is capable to defend the 3rd and 4th attacks too, it should ensure for any two identical data blocks D1 and D2 that are writen to memory on different time or to different addresses, their nonces N1 and N2 should be randomly generated and make the related C1 and C2 random values.
-
 
 \subsection{Evaluating the Security of AP Designs}
 \paragraph{What to Say}
@@ -119,8 +104,7 @@ Add the drawbacks of these early research works.
 
 Recent research works try to make designs from the opposite way by modifying the analysis procedure of computational provable security model to make the analysis automative. Hence the analysis results of computational provable security model is sound, the results of automatic evaluation framework is sound. 
 
-\subsection{AP Designs}
-AP designs proposed till present can be categorized as Cryptographic Hash Function, Message Authentication Code(MAC) and Block-level Added Redundancy Explicit Authentication (AREA). 
+\subsection{AP Designs} 
 \subsubsection{Cryptographic Hash Functions}
 Bellare, Canetti, and Krawczyk designed two authentication models in \cite{hmac}, the nested construction NMAC and the hash based scheme HMAC. The advantage of HMAC compared with MAC schemes constructed by block cipher is the fast processing speed and simpler in implementation. 
 In this paper, the authors analyzed the security of NMAC and HAMC and provided a quantitative security result based on the security notion that HMAC is secure is the hash function used behaves like a PRF.  
@@ -255,8 +239,6 @@ scheme\cite{fast}.
 There were research works on attacks to existing authentication system or AE systems, such as
 \cite{cycle,attack_blk,hardware_attack}. Some of these works recover the security weakness in the design works while some other works depict attacks that are out of the security bound of system analyzed. 
 
-
-
 \subsection{Message Authentication(MA) Systems}
 \paragraph{What to say in this subsection}
 \begin{itemize}
@@ -294,26 +276,23 @@ The fourth step to evaluate the security of a MA system is analyzing the securit
 The final step is drawing the conclusion of the security of MA system. If the system does not fail in any one of previous four steps, the MA system is secure in general security notions and can effectively defend some kind of attacks.
  
 
-Gassend et al. proposed an integrity protection architecture in 2003 \cite{keylist}. The AP used in this design can be either hash function of MAC, not specificated. 
-Q: What is the contribution of this architecture? Off-chip processing faster? On-chip cost smaller?
-Can this architecture defend type 2 attack?
 
 \subsubsection{Hash Function Based MA Systems}
+When using hash function as AP to construct a MA system, the common solution is concatenation additional information to the data to form the input to hash function. This approach can ensure the distinction of input and protect against attacks in threat model.
 \paragraph{Uniprocessor System}
-Suh et al. introduced a architecture,named Log hash, to protect A and E, published in 2003 \cite{keylist}.
-In their design, the AP system adopted is a function named MSet-Add-Hash based on the hash function MD5. 
-\begin{itemize}
-	\item Using New design hash function MSet-Add-Hash based on the hash function MD5
-	\item what is requirements on input
-	\item how does this design met the requirements
-	\item how do security info protected? secure?
-	\item MSet is systematically analyzed in \cite{keylist}. can MSet-hash defend type 2 attack? how?
-	\item security conclusion 
-	\item on-chip, off-chip, cost
-\end{itemize}
+AEGIS, Gassend et al. design \cite{keylist} and log hash from suh et al. 
+Suh et al. introduced a architecture,named Log hash, to protect the integrity of data from and to the cache, published in 2003 \cite{keylist}.
+In their design, the AP system adopted is a function named MSet-Add-Hash based on the hash function MD5. When cache writes a data to the off-chip area, the data is concatenated with the destination address and a timestamp to form a message chunk, which is sent the the MSet-Add-Hash and compute a hash value. The hash value is denoted as WriteHash and recored on-chip, and (data,timestamp) is writen on the off-chip area.
+When cache reads a data from memory, the (data,timestamp) is read to the chip. A ReadHash value is computed with the tuple (data,address,timstamp) and compared with the related WriteHash value. If these two hash values are identical, data is not tampered.
+
+The security of Log hash design is achieved by concatenating address and timestamp to data in hash value generation. The concatenation ensure for each time of the invocation of hash function, the input is distinct.
+As MSet-Add-Hash is proved to be a secure hash function in \cite{keylist}, log hash design is secure to protect the data that invoke hash function.
+
+One design weakness is that not all the data sent out and recevied to the chip will invoke the hash function on-chip. This issue exposes some data to the attacker. This weakness was pointed by Yan et al.\cite{keylist} and Elbaz\cite{keylist}. 
 
 
 \subsubsection{MAC Function Based MA Systems}
+Some MA systems are construcnted based on AE schemes to provide protection on both confidentiality and integrity of data. In these AE based MA system, the authentication part is constructed with MAC schemes.
 \paragraph{Uniprocessor System}
 XOM\cite{keylist}: vulnerable to replay attack, analyzed by another paper. It`s optimization \cite{keylist} can defend replay attack.
 
@@ -325,10 +304,8 @@ In \cite{keylist}, Yan et al. proposed a MA design based on Galois/Counter Mode(
 	\item the security of secret information used in authentication(KEY, iv) is protected by merkely tree, secure? why?
 	\item assume the requirement is met, GCM is secure according to the analysis in \cite{keylist}, so the design is secure.
 	\item What add data is stored on-chip? what is stored off-chip on memory? On-chip cost?
-	
 \end{itemize}use timely authentication other than lazy authentication. use fast authentiation method other than hash(MD5).
 
-Vaslin`s design \cite{keylist} adopted CRC checksum for authentication, CRC is less security compared to hash function and MAC scheme.
 
 Rogers` design: \cite{keylist} 2009:
 \begin{itemize}
@@ -336,13 +313,14 @@ Rogers` design: \cite{keylist} 2009:
 	\item to 
 \end{itemize}
 
+Vaslin`s design \cite{keylist} adopted CRC checksum for authentication, CRC is less security compared to hash function and MAC scheme.
+
+
 \paragraph{Multiprocessor System}
 
 Shi et al. proposed a MA system for multiprocessor shared memory architecture. It is an Encrypt-and-MAC scheme and the MAC is generated with hash function Sha 256.
 
 
-\subsubsection{Block-level AREA Based MA Systems}
-\paragraph{Uniprocessor System}
 
 
 \bibliographystyle{plain}
