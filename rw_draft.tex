@@ -76,8 +76,11 @@ If an AREA system is capable to defend the 1st and 2nd attacks in the list, it s
 	\item early automative proof, as they have the weakness of formal methods, their security assumption are unrealistic
 	\item 	
 \end{itemize}
-\subsubsection{Computational Provable Security}
-Existential forgery under chosen-message attack.\cite{keylist}.In the security notions of computational provable security, computatoin time or No. of attack rounds determine the probabiltiy of success: the adversary can always succeed if the attack rounds allowed is unlimited; otherwise the probability of success is expressed in quantity of No. of attack rounds.
+If the resources, such as computation time, is unlimited for the attacker, and AP system can always be broken at some time. Research works on security analysis on AP system try quantify the evaluation result under the assumption that the attack has limitation on computation resources. According to our knowledge, there have been three categories of security evaluation mechanisms designed, namely computational model based on provable security theory, dolev-yao model based on formal methods theory and automatic security analysis framework combining the advantages from previous two models.
+
+\subsubsection{Computational Model based on Provable Security}
+Existential forgery under chosen-message attack.\cite{keylist}.
+In the security notions of computational provable security, computatoin time or No. of attack rounds determine the probabiltiy of success: the adversary can always succeed if the attack rounds allowed is unlimited; otherwise the probability of success is expressed in quantity of No. of attack rounds.
 
 In the analysis model of computational provable security, the security is quantified by the probability of successful forgery.
 
@@ -101,8 +104,10 @@ Let F$_0$ and F$_1$ be two function with a common domain D and a common range R.
 
 We can see that if F0 behaves much like F1, it is hard for A to distinguish between F0 and F1 then Adv$^{F0}_{F1}$ is very small. This case is adopted by Bellare et al. in the quantitative notion of randomness of a MAC scheme. If the randomness of a MAC scheme is good, then the MAC scheme behaves like a PRF and Adv$^{[PRF]}_{MAC}$ is small. 
 
-\subsubsection{Formal Method based Evaluation}
+\subsubsection{Dolev-Yao Model based on Formal Methods}
 Dolev-Yao \cite{keylist} framework is an approach aiming to evaluation the security of an cryptographic primitive automatically. This model is based on the princples of formal methods. 
+
+What is the properties of dolev-yao model?
 
 
 \subsubsection{Automated Sound Security Evaluation}
@@ -115,11 +120,12 @@ Add the drawbacks of these early research works.
 Recent research works try to make designs from the opposite way by modifying the analysis procedure of computational provable security model to make the analysis automative. Hence the analysis results of computational provable security model is sound, the results of automatic evaluation framework is sound. 
 
 \subsection{AP Designs}
+AP designs proposed till present can be categorized as Cryptographic Hash Function, Message Authentication Code(MAC) and Block-level Added Redundancy Explicit Authentication (AREA). 
 \subsubsection{Cryptographic Hash Functions}
 Bellare, Canetti, and Krawczyk designed two authentication models in \cite{hmac}, the nested construction NMAC and the hash based scheme HMAC. The advantage of HMAC compared with MAC schemes constructed by block cipher is the fast processing speed and simpler in implementation. 
 In this paper, the authors analyzed the security of NMAC and HAMC and provided a quantitative security result based on the security notion that HMAC is secure is the hash function used behaves like a PRF.  
 
-Suh et al. introduced an hash function design in \cite{keylist} aiming to protect the integrity of message.
+Suh et al. introduced an hash function design in \cite{keylist} aiming to protect the integrity of message. Compare with early hash functions, what is their properties?
 
 \subsubsection{Message Authentication Code(MAC) Scheme}
 \paragraph{Iterated MAC Schemes}
@@ -227,6 +233,8 @@ In \cite{Rogaway2011}, Rogaway pointed the weakness of GMAC as a MAC scheme when
 Handschuh and Preneel introduced key-recovery attacks on universal hash function based MAC algorithms in \cite{key_recover}. They introduced two types of attacks: weak key finding and partial information leaks.
 
 \subsubsection{The Authenticated Encryption Schemes}
+Three format of AE Schemes: Encrypt-then-MAC, Encrypt-and-MAC, MAC-then-Encrypt. AREA is in the same format of MAC-then-Encrypt. 
+Bellare 
 After various kind of MAC schemes were evaluated and claimed to be secure, a new cryptosystem, the Authenticated Encryption(AE) was introduced The Authenticated to combine the encryption of
 plaintext blocks and generation of the MAC in a single scheme to provide both
 confidentiality and integrity. The methodology of constructing a AE scheme was categorized by
@@ -248,9 +256,8 @@ There were research works on attacks to existing authentication system or AE sys
 \cite{cycle,attack_blk,hardware_attack}. Some of these works recover the security weakness in the design works while some other works depict attacks that are out of the security bound of system analyzed. 
 
 
-\subsubsection{Block-level Added Redundancy Explicit Authentication (AREA)}
 
-\subsection{Message Authentication(MA) Systems:: the Implementation of Theoretical Model}
+\subsection{Message Authentication(MA) Systems}
 \paragraph{What to say in this subsection}
 \begin{itemize}
 	\item The MA system design
@@ -258,8 +265,8 @@ There were research works on attacks to existing authentication system or AE sys
 \end{itemize}
 
 \paragraph{Concepts of Message Authentication(MA) System}
-After the Authentication Primitives are evaluated systematically, researchers have paid effort on designing message authentication system on-chip based on these primitives.
-In the design of on-chip message authentication system, the on-chip data is assumed to be inaccessible and secure, and the chip is called trusted area; while the data in the transmission and stored in off-chip memory is considered to be accessible to attackers and vulnerable. Transmission path(such as bus) and off-chip memory are called malicious area. 
+After the Authentication Primitives are evaluated systematically, researchers have paid effort on designing Message Authentication(MA) system to protect data integrity from or to the cache on-chip. 
+In the design of Message Authentication(MA) system, the on-chip data is assumed to be inaccessible and secure, and the chip is called trusted area; while the data in the transmission and stored in off-chip memory is considered to be accessible to attackers and vulnerable. Transmission path(such as bus) and off-chip memory are called malicious area. 
 \begin{figure}[htbp]
 \centering
 \includegraphics[scale=0.5]{./diagrams/MA_concept.pdf}
@@ -267,32 +274,34 @@ In the design of on-chip message authentication system, the on-chip data is assu
 \label{ma_system}
 \end{figure}
 
-Figure 1 expresses the concept of MA system for processor-memory communication. 
+Figure 1 expresses the concept of MA system for chip-memory communication. 
 When processor writes a data block, marked as D, to and address, marked as addr, on the memory, processor sends D to MA system and output a message block, marked as message(D, add$_B$), where add$_B$ represents an additional data block. The message block message(D,add$_B$) can be the data block D only, D concatenated with a short block(commonly called tag) or other format of D. The content of message(D,add$_B$) is determined by the crypographic primitive adopted by the MA system.
 When the processor wants to read the data D from address addr, the message(D,add$_B$) is read to SoC and sent to MA system first. After verified by MA, if the data D is not tampered, MA sends a signal indicating pass to processor and send the D to the processor, where D is extracted from message(D,add$_B$) block read from memory.
 If the MA system finds that the D is tampered, MA sends a failure signal to processor, and invoke the exception handling procedure.
-\paragraph{Security Evaluation for MA Systems}
 
+\paragraph{Security Evaluation for MA Systems}
+As discussed with previous articles, encryption can only protect the integrity of data from and to the cache. Authentication Primitives(AP) should be adopted on the chip to process the data with additional information block, such as secret key or nonce. 
+
+The processed data will be transfered to the off-chip area in a specific message format. The message is ciphertext blocks for hash function, [ciphertext $\mid$ tag] for MAC scheme, and E$_k$[plaintext $\mid$ nonce] for AREA. The first step to evaluate the security of a MA system is figure out the AP system adopted and additional information needed. 
+
+For each kind of AP design, there are requirements on the inputs to the AP system. For example, a MAC scheme accepting a nonce requires the nonce to be distinct to each data that invoke the MAC scheme. This requirement ensure that the scheme can defend two types of attacks in the threat model. The MA system design based on such a MAC scheme should ensure that for each data write to the off-chip area from cache, the related nonce should be distinctive. Otherwise, the MA system design is not secure. The second step in security evaluation on a MA system is figure out whether the requirments on inputs of AP system is met.
+
+If the MA system design meets the requirements of inputs for the AP system adopted, it is necessary to figure out what information is stored in off-chip area and what else are on-chip. Using MAC scheme as instance, the nonce and secrete key in tag generation should be inaccessable to the attacker.  
+The third step to evaluation the security of an MA system is examine the information stored on-chip and off-chip. If there is some information that can be adopted by the attacker to break the authetication system, the MA design can be assume not secure.
+
+The fourth step to evaluate the security of a MA system is analyzing the security of AP adopted. If the AP system is a novel design without previous systematically analysis, it is necessary to do the analysis with a evaluaiton mechanism, such as computational model based on provable security theory.
+
+The final step is drawing the conclusion of the security of MA system. If the system does not fail in any one of previous four steps, the MA system is secure in general security notions and can effectively defend some kind of attacks.
+ 
 
 Gassend et al. proposed an integrity protection architecture in 2003 \cite{keylist}. The AP used in this design can be either hash function of MAC, not specificated. 
 Q: What is the contribution of this architecture? Off-chip processing faster? On-chip cost smaller?
 Can this architecture defend type 2 attack?
 
-This is the procedure to analyze the security of an MA system
-\begin{enumerate}
-	\item What AP adopted
-	\item What is the requirements of AP to be secure
-	\item Do MA meets the requirements? How
-	\item how is secret info protected?
-	\item is AP systematically analyzed? Attacks defend? analyze article?
-	\item security conclusion
-	\item what stored on-chip what off-chip. Cost, performace
-	
-\end{enumerate}
-
 \subsubsection{Hash Function Based MA Systems}
 \paragraph{Uniprocessor System}
-Suh et al. introduced a architecture to protect A and E, published in 2003 \cite{keylist}.
+Suh et al. introduced a architecture,named Log hash, to protect A and E, published in 2003 \cite{keylist}.
+In their design, the AP system adopted is a function named MSet-Add-Hash based on the hash function MD5. 
 \begin{itemize}
 	\item Using New design hash function MSet-Add-Hash based on the hash function MD5
 	\item what is requirements on input
@@ -304,14 +313,11 @@ Suh et al. introduced a architecture to protect A and E, published in 2003 \cite
 \end{itemize}
 
 
-
-\paragraph{Multiprocessor System}
-
 \subsubsection{MAC Function Based MA Systems}
 \paragraph{Uniprocessor System}
 XOM\cite{keylist}: vulnerable to replay attack, analyzed by another paper. It`s optimization \cite{keylist} can defend replay attack.
 
-Yan`s design: \cite{keylist} 2006
+In \cite{keylist}, Yan et al. proposed a MA design based on Galois/Counter Mode(GCM) authenticated encrypion. According to the original design article of GCM \cite{keylist}, the nonce used to encryption and tag generation for each data from cache should be distinct. Yan et al. introduced a split counter structure. Each data from cache is splited into sevel blocks,  
 \begin{itemize}
 	\item the AP is GCM, faster than hash(MD5)
 	\item GCM require distinct IV as nonce for each invocation of GCM(each data)
@@ -330,16 +336,14 @@ Rogers` design: \cite{keylist} 2009:
 	\item to 
 \end{itemize}
 
-Mei`s design:
-\paragraph{Cost-Effective Tag Design}
-Hong, Guo and Hu introduced a parallel MAC design in \cite{cetd}.
-In their design, the inputs are ciphertext blocks(called encrypted cache line in this paper). A nonce is generated by encrypting a (address,counter,random) pair and then used in controlling the tag generation. The pair used in generating the nonce is consist of the virtual address of the ciphertext blocks, a random number and a counter. The inputs are processed in two stages: bit segment swap between 2 input blocks for several rounds and the block rotate shift. The parameters of each stage are segements in the nonce.
 \paragraph{Multiprocessor System}
 
 Shi et al. proposed a MA system for multiprocessor shared memory architecture. It is an Encrypt-and-MAC scheme and the MAC is generated with hash function Sha 256.
+
+
 \subsubsection{Block-level AREA Based MA Systems}
 \paragraph{Uniprocessor System}
-\paragraph{Multiprocessor System}
+
 
 \bibliographystyle{plain}
 \bibliography{./resources/tag_paper.bib}
