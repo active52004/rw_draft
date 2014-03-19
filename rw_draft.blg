@@ -1,51 +1,52 @@
-This is BibTeX, Version 0.99d (TeX Live 2012)
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: rw_draft.aux
 The style file: plain.bst
 Database file #1: ./resources/tag_paper.bib.bib
-Warning--I didn't find a database entry for "hm_survey"
+Warning--I didn't find a database entry for "Suh-MA"
+Warning--I didn't find a database entry for "Clarke-hash"
 Warning--can't use both volume and number fields in cbc1994
 Warning--empty booktitle in tweak
 Warning--empty journal in Rogaway2011
-You've used 31 entries,
+You've used 39 entries,
             2118 wiz_defined-function locations,
-            688 strings with 10510 characters,
-and the built_in function-call counts, 13162 in all, are:
-= -- 1389
-> -- 440
-< -- 25
-+ -- 172
-- -- 141
-* -- 822
-:= -- 1927
-add.period$ -- 95
-call.type$ -- 31
-change.case$ -- 163
+            737 strings with 12147 characters,
+and the built_in function-call counts, 17067 in all, are:
+= -- 1796
+> -- 618
+< -- 31
++ -- 242
+- -- 203
+* -- 1095
+:= -- 2507
+add.period$ -- 119
+call.type$ -- 39
+change.case$ -- 218
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 606
-empty$ -- 1111
-format.name$ -- 141
-if$ -- 2968
+cite$ -- 42
+duplicate$ -- 768
+empty$ -- 1398
+format.name$ -- 203
+if$ -- 3827
 int.to.chr$ -- 0
-int.to.str$ -- 31
-missing$ -- 31
-newline$ -- 159
-num.names$ -- 64
-pop$ -- 216
+int.to.str$ -- 39
+missing$ -- 39
+newline$ -- 199
+num.names$ -- 80
+pop$ -- 279
 preamble$ -- 1
-purify$ -- 132
+purify$ -- 179
 quote$ -- 0
-skip$ -- 486
+skip$ -- 624
 stack$ -- 0
-substring$ -- 1048
-swap$ -- 240
-text.length$ -- 25
+substring$ -- 1347
+swap$ -- 309
+text.length$ -- 31
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 124
+type$ -- 156
 warning$ -- 3
-while$ -- 145
-width$ -- 33
-write$ -- 359
-(There were 4 warnings)
+while$ -- 182
+width$ -- 41
+write$ -- 452
+(There were 5 warnings)

@@ -681,7 +681,171 @@ url = {http://dx.doi.org/10.1109/SP.2006.1},
 volume = {2006},
 year = {2006}
 }
+@inproceedings{dolev-yao,
+abstract = {Concerns mainly protocols for transmitting a secret plaintext M between two users. To give an idea of the way a saboteur may break the system, the authors consider a few examples},
+address = {New York, NY, USA},
+annote = {security;public key protocols;secret plaintext;
+
+        
+formal methods},
+author = {Dolev, D and Yao, A C},
+booktitle = {22nd Annual Symposium on Foundations of Computer Science},
+file = {:Users/duke/Downloads/PDF\_files/04568353.pdf:pdf},
+keywords = {computer networks,data communication systems,formal languages,protocols,security of data},
+pages = {350 -- 7},
+title = {{On the security of public key protocols}},
+year = {1981}
+}
+
+@inproceedings{com-indis-log,
+abstract = {Computational Indistinguishability Logic (CIL) is a logic for reasoning about cryptographic primitives in computational models. It captures reasoning patterns that are common in provable security, such as simulations and reductions. CIL is sound for the standard model, but also supports reasoning in the random oracle and other idealized models. We illustrate the benefits of CIL by formally proving the security of the probabilistic signature scheme (PSS). Copyright 2010 ACM.},
+address = {Chicago, IL, United states},
+annote = {Bisimulations;Determinization;Logic;Provable security;Random Oracle;Signature Scheme;},
+author = {Barthe, Gilles and Daubignard, Marion and Kapron, Bruce and Lakhnech, Yassine},
+booktitle = {Proceedings of the ACM Conference on Computer and Communications Security},
+file = {:Users/duke/Library/Application Support/Mendeley Desktop/Downloaded/Barthe et al. - 2010 - Computational indistinguishability logic.pdf:pdf},
+issn = {15437221},
+keywords = {Authentication,Cryptography},
+pages = {375--386},
+title = {{Computational indistinguishability logic}},
+url = {http://dx.doi.org/10.1145/1866307.1866350},
+year = {2010}
+}
+@inproceedings{auto-proof,
+abstract = {This paper presents the first automatic technique for proving not only protocols but also primitives in the exact security computational model. Automatic proofs of cryptographic protocols were up to now reserved to the Dolev-Yao model, which however makes quite strong assumptions on the primitives. On the other hand, with the proofs by reductions, in the complexity theoretic framework, more subtle security assumptions can be considered, but security analyses are manual. A process calculus is thus defined in order to take into account the probabilistic semantics of the computational model. It is already rich enough to describe all the usual security notions of both symmetric and asymmetric cryptography, as well as the basic computational assumptions. As an example, we illustrate the use of the new tool with the proof of a quite famous asymmetric primitive: unforgeability under chosen-message attacks (UF-CMA) of the full-domain hash signature scheme under the (trapdoor)-one-wayness of some permutations},
+address = {Berlin, Germany},
+annote = {automated security proofs;game sequence;protocols;security computational model;cryptographic protocols;Dolev-Yao model;complexity theoretic framework;process calculus;probabilistic semantics;symmetric cryptography;asymmetric cryptography;unforgeability chosen-message attacks;full-domain hash signature scheme;},
+author = {Blanchet, B and Pointcheval, D},
+booktitle = {Advances in Cryptology - CRYPTO 2006. 26th Annual International Cryptology Conference. Proceedings. (Lecture Notes in Computer Science Vol. 4117)},
+file = {:Users/Duke/Documents/Papers/2006/Blanchet/Advances in Cryptology - CRYPTO 2006. 26th Annual International Cryptology Conference. Proceedings. (Lecture Notes in Computer Science Vol. 4117) 2006 Blanchet.pdf:pdf},
+keywords = {computational complexity,cryptographic protocols,game theory,probability,process algebra},
+pages = {537 -- 54},
+title = {{Automated security proofs with sequences of games}},
+year = {2006}
+}
+@inproceedings{mech-prover,
+abstract = {We present a new mechanized prover for secrecy properties of cryptographic protocols. In contrast to most previous provers, our tool does not rely on the Dolev-Yao model, but on the computational model. It produces proofs presented as sequences of games; these games are formalized in a probabilistic polynomial-time process calculus. Our tool provides a generic method for specifying security properties of the cryptographic primitives, which can handle shared-and public-key encryption, signatures, message authentication codes, and hash functions. Our tool produces proofs valid for a number of sessions polynomial in the security parameter, in the presence of an active adversary. We have implemented our tool and tested it on a number of examples of protocols from the literature. \&copy; 2006 IEEE.},
+address = {Berkeley, United states},
+annote = {Authentication codes;Cryptographic protocols;Generic method;},
+author = {Blanchet, Bruno},
+booktitle = {Proceedings - IEEE Symposium on Security and Privacy},
+file = {:Users/duke/Library/Application Support/Mendeley Desktop/Downloaded/Blanchet - 2006 - A computationally sound mechanized prover for security protocols.pdf:pdf},
+issn = {10816011},
+keywords = {Cryptography,Electronic document identification systems,Game theory,Network protocols,Security of data,Theorem proving},
+pages = {140--154},
+title = {{A computationally sound mechanized prover for security protocols}},
+url = {http://dx.doi.org/10.1109/SP.2006.1},
+volume = {2006},
+year = {2006}
+}
+@inproceedings{ae-notion,
+abstract = {We consider two possible notions of authenticity for symmetric encryption schemes, namely integrity of plaintexts and integrity of ciphertexts, and relate them to the standard notions of privacy for symmetric encryption schemes by presenting implications and separations between all notions considered. We then analyze the security of authenticated encryption schemes designed by \&ldquo;generic composition,\&rdquo; meaning making black-box use of a given symmetric encryption scheme and a given MAC. Three composition methods are considered, namely encrypt-and-MAC plaintext, MAC-then-encrypt, and encrypt-then-MAC. For each of these, and for each notion of security, we indicate whether or not the resulting scheme meets the notion in question assuming the given symmetric encryption scheme is secure against chosen-plaintext attack and the given MAC is unforgeable under chosen-message attack. We provide proofs for the cases where the answer is \&ldquo;yes\&rdquo; and counter-examples for the cases where the answer is \&ldquo;no\&rdquo;},
+address = {Berlin, Germany},
+annote = {authenticated encryption;generic composition paradigm;authenticity;symmetric encryption;plaintext integrity;ciphertext integrity;privacy;security;encrypt-and-MAC plaintext method;MAC-then-encrypt method;encrypt-then-MAC method;proofs;},
+author = {Bellare, M and Namprempre, C},
+booktitle = {Advances in Cryptology - ASIACRYPT 2000. 6th International Conference on the Theory and Application of Cryptology and Information Security. Proceedings (Lecture Notes in Computer Science Vol.1976)},
+file = {:Users/duke/Library/Application Support/Mendeley Desktop/Downloaded/Bellare, Namprempre - 2000 - Authenticated encryption relations among notions and analysis of the generic composition paradigm(2).pdf:pdf},
+keywords = {cryptography,data integrity,data privacy,message authentication},
+pages = {531 -- 45},
+title = {{Authenticated encryption: relations among notions and analysis of the generic composition paradigm}},
+year = {2000}
+}
 
 
+@inproceedings{Suh_MA,
+abstract = {Secure processors enable new sets of applications such as commercial grid computing, software copy-protection, and secure mobile agents by providing security from both physical and software attacks. This paper proposes new hardware mechanisms for memory integrity verification and encryption, which are two key primitives required in single-chip secure processors. The integrity verification mechanism offers significant performance advantages over existing ones when the checks are infrequent as in grid computing applications. The encryption mechanism improves the performance in all cases},
+annote = {memory integrity verification;encryption;commercial grid computing;software copy-protection;secure mobile agents;software attacks;single-chip secure processors;digital rights managment;
+log hash scheme
 
+        
+based on hash},
+author = {Suh, G E and Clarke, D and Gasend, B and van Dijk, M and Devadas, S},
+booktitle = {36th International Symposium on Microarchitecture},
+file = {:Users/Duke/Documents/Papers/2003/Suh/36th International Symposium on Microarchitecture 2003 Suh.pdf:pdf},
+keywords = { computer crime, cryptography, formal verification, memory architecture,cache storage},
+pages = {339 ---- 50},
+title = {{Efficient memory integrity verification and encryption for secure processors}},
+url = {http://dx.doi.org/10.1109/MICRO.2003.1253207},
+year = {2003}
+}
+@inproceedings{Clarke_hash,
+abstract = {We introduce a new cryptographic tool: multiset hash functions. Unlike standard hash functions which take strings as input, multiset hash functions operate on multisets (or sets). They map multisets of arbitrary finite size to strings (hashes) of fixed length. They are incremental in that, when new members are added to the multiset, the hash can be updated in time proportional to the change. The functions may be multiset-collision resistant in that it is difficult to find two multisets which produce the same hash, or just set-collision resistant in that it is difficult to find a set and a multiset which produce the same hash. We demonstrate how set-collision resistant multiset hash functions make an existing offline memory integrity checker secure against active adversaries. We improve on this checker such that it can use smaller time stamps without increasing the frequency of checks. The improved checker uses multiset-collision resistant multiset hash functions},
+address = {Berlin, Germany},
+annote = {multiset hash functions;offline memory integrity checking;cryptographic tool;multiset collision resistant function;},
+author = {Clarke, D and Devadas, S and van Dijk, M and Gassend, B and Suh, G E},
+booktitle = {Advances in Cryptology - ASIACRYPT 2003. 9th International Conference on the Theory and Application of Cryptology and Information Security. Proceedings (Lecture Notes in Comput. Sci. Vol.2894)},
+file = {:Users/duke/Downloads/PDF\_files/mhashes.pdf:pdf},
+keywords = {cryptography,random-access storage,set theory},
+pages = {188--207},
+title = {{Incremental multiset hash functions and their application to memory integrity checking}},
+year = {2003}
+}
+@inproceedings{yan-MA,
+abstract = {Protection from hardware attacks such as snoopers and mod chips has been receiving increasing attention in computer architecture. This paper presents a new combined memory encryption/authentication scheme. Our new split counters for counter-mode encryption simultaneously eliminate counter overflow problems and reduce per-block counter size, and we also dramatically improve authentication performance and security by using the Galois/counter mode of operation (GCM), which leverages counter-mode encryption to reduce authentication latency and overlap it with memory accesses. Our results indicate that the split-counter scheme has a negligible overhead even with a small (32KB) counter cache and using only eight counter bits per data block. The combined encryption/authentication scheme has an IPC overhead of 5\% on average across SPEC CPU 2000 benchmarks, which is a significant improvement over the 20\% overhead of existing encryption/authentication schemes},
+annote = {memory encryption;snoopers;mod chips;computer architecture;split counters;counter-mode encryption;Galois counter mode of operation;authentication latency;memory accesses;IPC overhead;SPEC CPU 2000 benchmarks;
+
+        
+based on GMAC },
+author = {Yan, Chenyu and Rogers, B and Englender, D and Solihin, D and Prvulovic, M},
+booktitle = {Proceedings. 33rd International Symposium on Computer Architecture},
+file = {:Users/duke/Library/Application Support/Mendeley Desktop/Downloaded/Yan et al. - 2006 - Improving cost, performance, and security of memory encryption and authentication.pdf:pdf},
+keywords = {Galois fields,cache storage,cryptography,memory architecture,message authentication},
+pages = {12 pp. ----},
+title = {{Improving cost, performance, and security of memory encryption and authentication}},
+year = {2006}
+}
+@article{area,
+abstract = {The bus between the System on Chip (SoC) and the external memory is one of the weakest points of computer systems: an adversary can easily probe this bus in order to read private data (data confidentiality concern) or to inject data (data integrity concern). The conventional way to protect data against such attacks and to ensure data confidentiality and integrity is to implement two dedicated engines: one performing data encryption and another data authentication. This approach, while secure, prevents parallelizability of the underlying computations. In this paper, we introduce the concept of Block-Level Added Redundancy Explicit Authentication (BL-AREA) and we describe a Parallelized Encryption and Integrity Checking Engine (PE-ICE) based on this concept. BL-AREA and PE-ICE have been designed to provide an effective solution to ensure both security services while allowing for full parallelization on processor read and write operations and optimizing the hardware resources. Compared to standard encryption which ensures only confidentiality, we show that PE-ICE additionally guarantees code and data integrity for less than 4\% of run-time performance overhead. \{\&\}copy; 2010 Springer-Verlag Berlin Heidelberg.},
+annote = {Computer Security;Data integrity;Encryption;Hardware Attacks;Memory;},
+author = {Elbaz, Reouven and Torres, Lionel and Sassatelli, Gilles and Guillemin, Pierre and Bardouillet, Michel and Martinez, Albert},
+file = {:Users/duke/Library/Application Support/Mendeley Desktop/Downloaded/Elbaz et al. - 2010 - Block-Level Added Redundancy Explicit Authentication for Parallelized Encryption and Integrity Checking of process.pdf:pdf},
+journal = {Transactions on Computational Science X. Special Issue on Security in Computing, Part I},
+keywords = { Authentication, Computer hardware, Ice, Network security, Programmable logic controllers, Quality assurance, Security systems, embedded systems,redundancy},
+number = {PART 1},
+pages = {231--260},
+title = {{Block-Level Added Redundancy Explicit Authentication for Parallelized Encryption and Integrity Checking of processor-memory transactions}},
+url = {http://dx.doi.org/10.1007/978-3-642-17499-5\_10},
+volume = {6340},
+year = {2010}
+}
+@inproceedings{pc-ice,
+abstract = {This paper describes a novel engine, called PE-ICE (Parallelized Encryption and Integrity Checking Engine), enabling to guarantee confidentiality and integrity of data exchanged between a SoC (System on Chip) and its external memory. The PE-ICE approach is based on an existing block-encryption algorithm to which the integrity checking capability is added. Simulation results show that the performance overhead of PE-ICE remains low (below 4\%) compared to block-encryption-only systems (which provide data confidentiality only). Copyright 2006 ACM.},
+annote = {Block-encryption-only systems;Bus encryption;Data confidentiality;Data integrity;Integrity checking;},
+author = {Elbaz, Reouven and Torres, Lionel and Sassatelli, Gilles and Guillemin, Pierre and Bardouillet, Michel and Martinez, Albert},
+booktitle = {Proceedings - Design Automation Conference},
+file = {:Users/duke/Library/Application Support/Mendeley Desktop/Downloaded/Elbaz et al. - 2006 - A parallelized way to provide data encryption and integrity checking on a processor-memory bus.pdf:pdf},
+keywords = { Data processing, Electronic data interchange, Integrated control, microprocessor chips,Computer privacy},
+pages = {506--509},
+title = {{A parallelized way to provide data encryption and integrity checking on a processor-memory bus}},
+url = {http://dx.doi.org/10.1145/1146909.1147042},
+year = {2006}
+}
+@article{rogers-MA,
+abstract = {With current trends toward embedded computer systems\{\&\}psila; ubiquitous accessibility, connectivity, diversification, and proliferation, security becomes a critical issue in embedded computer systems design and operation. Embedded computer systems are subjected to both software and physical attacks aimed at subverting system operation, extracting key secrets, or intellectual property theft. We propose several cost-effective architectural extensions suitable for mid-range to high-end embedded processors. These extensions ensure the integrity and confidentiality of both instructions and data, introducing low performance overhead (1.86\% for instructions and 14.9\% for data). [All rights reserved Elsevier].},
+annote = {security extensions;embedded processor integrity;embedded processor confidentiality;embedded computer systems;ubiquitous accessibility;ubiquitous connectivity;ubiquitous diversification;ubiquitous proliferation;embedded computer systems design;embedded computer systems operation;software attacks;physical attacks;key secret extraction;intellectual property theft;mid-range embedded processors;high-end embedded processors;},
+author = {Rogers, A and Milenkovic, A},
+file = {:Users/duke/Library/Application Support/Mendeley Desktop/Downloaded/Rogers, Milenkovic - 2009 - Security extensions for integrity and confidentiality in embedded processors.pdf:pdf},
+journal = {Microprocess. Microsyst. (Netherlands)},
+keywords = { computer architecture, embedded systems, microcomputers, security of data,industrial property},
+number = {5-6},
+pages = {398--414},
+title = {{Security extensions for integrity and confidentiality in embedded processors}},
+url = {http://dx.doi.org/10.1016/j.micpro.2009.06.002},
+volume = {33},
+year = {2009}
+}
+@article{vaslin-MA,
+abstract = {This paper describes a complete off-chip memory security solution for embedded systems. Our security core is based on a one-time pad (OTP) encryption circuit and a CRC-based integrity checking module. These modules safeguard external memory used by embedded processors against a series of well-known attacks, including replay attacks, spoofing attacks and relocation attacks. Our implementation limits on-chip memory space overhead to less than 33\% versus memory used by a standard microprocessor and reduces memory latency achieved by previous approaches by at least half. The performance loss for software execution with our solution is only 10\% compared with a non-protected implementation. An FPGA prototype of our security core has been completed to validate our findings.[All rights reserved Elsevier].},
+annote = {embedded microprocessor systems;off-chip memory security;one-time pad encryption;replay attacks;spoofing attacks;relocation attacks;FPGA prototype;},
+author = {Vaslin, R and Gogniat, G and Diguet, J-P and Wanderley, E and Tessier, R and Burleson, W},
+file = {:Users/duke/Library/Application Support/Mendeley Desktop/Downloaded/Vaslin et al. - 2009 - A security approach for off-chip memory in embedded microprocessor systems.pdf:pdf},
+journal = {Microprocess. Microsyst. (Netherlands)},
+keywords = { field programmable gate arrays, memory architecture,embedded systems},
+number = {1},
+pages = {37--45},
+title = {{A security approach for off-chip memory in embedded microprocessor systems}},
+url = {http://dx.doi.org/10.1016/j.micpro.2008.08.008},
+volume = {33},
+year = {2009}
+}
 

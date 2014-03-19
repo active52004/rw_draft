@@ -1,21 +1,14 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.3.3)  19 MAR 2014 22:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.12.5)  20 MAR 2014 00:06
 entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
 **rw_draft.tex
-(D:\GitHub\rw_draft\rw_draft.tex
+(./rw_draft.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-(G:\Tools\MikTex\tex\latex\base\article.cls
+Babel <3.9f> and hyphenation patterns for 2 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(G:\Tools\MikTex\tex\latex\base\size10.clo
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -30,31 +23,31 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(G:\Tools\MikTex\tex\latex\graphics\graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(G:\Tools\MikTex\tex\latex\graphics\keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(G:\Tools\MikTex\tex\latex\graphics\graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(G:\Tools\MikTex\tex\latex\graphics\trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(G:\Tools\MikTex\tex\latex\00miktex\graphics.cfg
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(G:\Tools\MikTex\tex\latex\pdftex-def\pdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(G:\Tools\MikTex\tex\generic\oberdiek\infwarerr.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(G:\Tools\MikTex\tex\generic\oberdiek\ltxcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count87
@@ -62,13 +55,13 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(G:\Tools\MikTex\tex\latex\subfig\subfig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(G:\Tools\MikTex\tex\latex\caption\caption.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(G:\Tools\MikTex\tex\latex\caption\caption3.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen105
@@ -95,24 +88,24 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \sf@top=\skip46
 \sf@bottom=\skip47
 )
-(G:\Tools\MikTex\tex\latex\amsmath\amsmath.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip48
 
 For additional information on amsmath, use the `?' option.
-(G:\Tools\MikTex\tex\latex\amsmath\amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(G:\Tools\MikTex\tex\latex\amsmath\amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks15
 \ex@=\dimen113
 ))
-(G:\Tools\MikTex\tex\latex\amsmath\amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen114
 )
-(G:\Tools\MikTex\tex\latex\amsmath\amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count96
@@ -152,8 +145,9 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
-)
-(D:\GitHub\rw_draft\rw_draft.aux)
+) (./rw_draft.aux)
+\openout1 = `rw_draft.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
@@ -167,7 +161,7 @@ LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
 
-(G:\Tools\MikTex\tex\context\base\supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count108
 \scratchdimen=\dimen122
@@ -180,133 +174,129 @@ LaTeX Font Info:    ... okay on input line 5.
 \MPnumerator=\count112
 \makeMPintoPDFobject=\count113
 \everyMPtoPDFconversion=\toks21
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
- [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<./diagrams/MAC.pdf, id=8, 845.1575pt x 597.23125pt>
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<./diagrams/MAC.pdf, id=9, 845.1575pt x 597.23125pt>
 File: ./diagrams/MAC.pdf Graphic file (type pdf)
  <use ./diagrams/MAC.pdf>
-Package pdftex.def Info: ./diagrams/MAC.pdf used on input line 35.
+Package pdftex.def Info: ./diagrams/MAC.pdf used on input line 36.
 (pdftex.def)             Requested size: 338.057pt x 238.88826pt.
 
-[2 <D:/GitHub/rw_draft/diagrams/MAC.pdf>]
-
-LaTeX Warning: Citation `keylist' on page 3 undefined on input line 63.
-
-[3] [4]
-
-LaTeX Warning: Citation `keylist' on page 5 undefined on input line 89.
-
-[5]
-
-LaTeX Warning: Citation `keylist' on page 6 undefined on input line 108.
-
-<./diagrams/cbc-mac.pdf, id=39, 845.1575pt x 597.23125pt>
+[2 <./diagrams/MAC.pdf>] [3] [4] [5]
+<./diagrams/cbc-mac.pdf, id=40, 845.1575pt x 597.23125pt>
 File: ./diagrams/cbc-mac.pdf Graphic file (type pdf)
 
 <use ./diagrams/cbc-mac.pdf>
-Package pdftex.def Info: ./diagrams/cbc-mac.pdf used on input line 117.
+Package pdftex.def Info: ./diagrams/cbc-mac.pdf used on input line 113.
 (pdftex.def)             Requested size: 253.54921pt x 179.17075pt.
- [6 <D:/GitHub/rw_draft/diagrams/cbc-mac.pdf>]
-<./diagrams/cmac.pdf, id=57, 845.1575pt x 597.23125pt>
+ [6 <./diagrams/cbc-mac.pdf>]
+<./diagrams/cmac.pdf, id=58, 845.1575pt x 597.23125pt>
 File: ./diagrams/cmac.pdf Graphic file (type pdf)
 
 <use ./diagrams/cmac.pdf>
-Package pdftex.def Info: ./diagrams/cmac.pdf used on input line 137.
+Package pdftex.def Info: ./diagrams/cmac.pdf used on input line 133.
 (pdftex.def)             Requested size: 253.54921pt x 179.17075pt.
- [7 <D:/GitHub/rw_draft/diagrams/cmac.pdf>] [8]
-[9] [10]
-
-LaTeX Warning: Citation `keylist' on page 11 undefined on input line 219.
-
-[11]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 239.
-
- (G:\Tools\MikTex\tex\latex\base\omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 239.
-
-<./diagrams/MA_concept.pdf, id=88, 663.07722pt x 281.85298pt>
+ [7 <./diagrams/cmac.pdf>] [8] [9] [10] [11]
+<./diagrams/MA_concept.pdf, id=89, 663.07722pt x 281.85298pt>
 File: ./diagrams/MA_concept.pdf Graphic file (type pdf)
 
 <use ./diagrams/MA_concept.pdf>
-Package pdftex.def Info: ./diagrams/MA_concept.pdf used on input line 248.
+Package pdftex.def Info: ./diagrams/MA_concept.pdf used on input line 238.
 (pdftex.def)             Requested size: 331.5378pt x 140.92615pt.
- [12 <D:/GitHub/rw_draft/diagrams/MA_concept.pdf>] [13]
+ [12 <./diagrams/MA_concept.pdf>] [13]
 
-LaTeX Warning: Citation `keylist' on page 14 undefined on input line 275.
-
-
-LaTeX Warning: Citation `keylist' on page 14 undefined on input line 280.
+LaTeX Warning: Citation `Suh-MA' on page 14 undefined on input line 265.
 
 
-LaTeX Warning: Citation `keylist' on page 14 undefined on input line 282.
+LaTeX Warning: Citation `Clarke-hash' on page 14 undefined on input line 266.
 
 
-LaTeX Warning: Citation `keylist' on page 14 undefined on input line 282.
+LaTeX Warning: Citation `Clarke-hash' on page 14 undefined on input line 270.
 
-
-LaTeX Warning: Citation `keylist' on page 14 undefined on input line 288.
-
-
-LaTeX Warning: Citation `keylist' on page 14 undefined on input line 288.
-
-
-LaTeX Warning: Citation `keylist' on page 14 undefined on input line 289.
-
-
-LaTeX Warning: Citation `keylist' on page 14 undefined on input line 289.
-
-[14]
-
-LaTeX Warning: Citation `keylist' on page 15 undefined on input line 292.
-
-
-LaTeX Warning: Citation `keylist' on page 15 undefined on input line 293.
-
-
-LaTeX Warning: Citation `keylist' on page 15 undefined on input line 299.
-
-
-LaTeX Warning: Citation `keylist' on page 15 undefined on input line 301.
-
-
-LaTeX Warning: Citation `keylist' on page 15 undefined on input line 303.
-
-(D:\GitHub\rw_draft\rw_draft.bbl [15] [16]
-Underfull \hbox (badness 2913) in paragraph at lines 139--145
+[14] (./rw_draft.bbl [15] [16] [17]
+Underfull \hbox (badness 2913) in paragraph at lines 173--179
 []\OT1/cmr/m/n/10 M. Liskov, R.L. Rivest, and D. Wag-ner.  Tweak-able block ci-
 
  []
 
-[17]) [18] (D:\GitHub\rw_draft\rw_draft.aux)
+[18]) [19] (./rw_draft.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2977 strings out of 493921
- 43026 string characters out of 3152095
- 102974 words of memory out of 3000000
- 6282 multiletter control sequences out of 15000+200000
- 5958 words of font info for 22 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 44i,8n,42p,822b,273s stack positions out of 5000i,500n,10000p,200000b,50000s
-<G:/Tools/MikTex/fonts/type1/public/amsfonts/cm/cmbx10.pfb><G:/Tools/MikTex/f
-onts/type1/public/amsfonts/cm/cmbx12.pfb><G:/Tools/MikTex/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb><G:/Tools/MikTex/fonts/type1/public/amsfonts/cm/cmmi7.pfb>
-<G:/Tools/MikTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><G:/Tools/MikTex/font
-s/type1/public/amsfonts/cm/cmr7.pfb><G:/Tools/MikTex/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb><G:/Tools/MikTex/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on rw_draft.pdf (18 pages, 383004 bytes).
+ 3326 strings out of 495031
+ 49906 string characters out of 6181531
+ 111843 words of memory out of 5000000
+ 6516 multiletter control sequences out of 15000+600000
+ 5958 words of font info for 22 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 44i,8n,42p,814b,273s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmti10.pfb>
+Output written on rw_draft.pdf (19 pages, 371590 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
+ 171 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
