@@ -130,7 +130,7 @@ Petrank and Rackof provided the original security evaluation of EMAC in \cite{em
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[scale=0.3]{./diagrams/cmac.pdf}
+\includegraphics[scale=0.5]{./diagrams/cmac.pdf}
 \caption{The class of CMAC}
 \label{CMAC }
 \end{figure}
@@ -165,7 +165,12 @@ In \cite{xor-mac}, the authors provided a quantitative security conclusion of xo
 The main weakness of XOR mac is the cost of storage for additional input parameters. According the design of XOR mac, assume the input message is divided into m blocks and the length of each block is half of the length of block cipher input. Each input block has a index with domain as [1,m]. A input block is the concatenated with the encoder of its index(whose length is same as the input block) to form the input to a block cipher, for example (i$\|$M[i]). Besides the m concatenated input blocks, a nonce formed with random number or counter is used a input to the block cipher. Then the m+1 output blocks from block cipher is xored and the output block of XOR operation is concatenated with a random number or counter to form the final tag. 
 We can see that the length of tag from XOR-mac is the sum of the length of a output block from block cipher and the length of a random number or counter. This long-length MAC needs additional storage compared with the tag from iterated MAC schemes. 
 On the other hand, the nonce maintained by the user of XOR mac is regarded a disadvantage by some researchers.
-
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.5]{./diagrams/pmac.pdf}
+\caption{RAW PMAC}
+\label{PMAC}
+\end{figure}
 \paragraph{Raw PMAC}
 Black and Rogaway introduced an parallel MAC scheme named PMAC in \cite{pmac}. 
 The improvement of PMAC compared with XOR MAC is the less calling of block cipher when generating a tag. Secondly, there is no limitation for the input length when using PMAC. 
